@@ -33,6 +33,9 @@
       body {
         background-color: #FFFFFF;
         margin-left: 0px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
         
       }
 
@@ -46,17 +49,10 @@
       }
 
       footer {
-        position: fixed;
-        bottom: 0px;
         width: 100%;
         height: 50px;
-        position: absolute;
-        top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
-        visibility: visible;
+        margin: auto 0;
       }
-      
-        
-
         background-color: #333333;
       }
 

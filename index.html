@@ -4,6 +4,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
+      body {
+        background: white;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+
+      header {
+        background: linear-gradient(170deg, lightblue 50%, #4682B4 50% 100%);
+      }
+
       table {
         font-family: arial, sans-serif;
         boder-collapse: separate;
@@ -30,40 +40,6 @@
         display: none;
       }
 
-      body {
-        background: white;
-        margin-left: 50px;
-        margin-right: 50px;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-      }
-
-      header {
-        background: linear-gradient(170deg, lightblue 50%, #4682B4 50% 100%);
-      }
-
-      footer {
-        width: 100%;
-        height: 50px;
-        margin-top: auto;
-        background-color: #333333;
-      }
-
-      .footer-info {
-        position: absolute;
-        right: 25px;
-        padding: 14px;
-        display: grid;
-        grid-template-columns: 150px 150px 200px;
-      }
-
-      button {
-        border-radius: 5px;
-        border-color:white; 
-        cursor: pointer;
-      }
-      
       .paper-title {
         text-align: center;
       }
@@ -74,7 +50,7 @@
     </style>
   </head>
   <body>
-    <header id="Top">
+    <header>
       <div>
         <img src="WebBanner2.png" alt="Banner" width="600" height="177">
         <h1>ENG0018 Computer Laboratory 2025/26</h1>
@@ -135,17 +111,6 @@
     <hr>
     </main>
     <footer>
-      <div class="footer-info">
-        <div>
-          <a href="#Top"><button>Back to Top</button></a>
-        </div>
-        <div>
-          <button>Switch</button>
-        </div>
-        <div>
-          <h7 style="color:white;">Student URN: 6928581</h7>
-        </div>
-      </div>
     </footer>
   </body>
 </html>

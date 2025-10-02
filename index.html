@@ -53,9 +53,23 @@
       }
 
       .footer-bar {
+        width: 400px;
+        margin: 0 auto;
+        left: 20px;
         position: absolute;
         display: grid;
         grid-template-columns: 100px 100px 200px;
+      }
+
+      button {
+        border: 3px;
+        border-color: white;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      .arrow {
+        transform: rotate(-135deg);
       }
     </style>
   </head>
@@ -124,7 +138,7 @@
     <footer>
       <div class="footer-bar">
         <div>
-          <a href="#Top"><button>&#x21D1;</button></a>
+          <a href="#Top"><button><div class="arrow">&#x27A4;<div></button></a>
         </div>
         <div>
           <button>Switch</button>

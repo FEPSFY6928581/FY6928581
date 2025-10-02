@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
       header {
-        background: linear-gradient(170deg, lightblue, #4682B4);
+        background: linear-gradient(173deg, lightblue 50%, #4682B4 50%);
       }
 
       main {
@@ -15,9 +15,10 @@
 
       footer {
         position: fixed;
-        bottom: 0;
+        right: 75px;
+        bottom: 0px;
         background-color: #333333;
-        width: 600px;
+        width: 300px;
       }
 
       table {
@@ -26,7 +27,7 @@
         border-spacing: 0;
         border-radius: 15px;
         border: 1px solid #DDDDDD;
-        width: 30%;
+        width: 100%;
       }
 
       td, th {
@@ -53,12 +54,12 @@
       .footer-bar {
         position: relative;
         display: grid;
-        grid-template-columns: 100px 100px 200px;
+        grid-template-columns: 50px 70px 180px;
       }
     </style>
   </head>
   <body>
-    <header>
+    <header id="Top">
       <div style="margin-left:50px;">
         <img src="WebBanner2.png" alt="Banner" width="600" height="177">
         <h1>ENG0018 Computer Laboratory 2025/26</h1>
@@ -121,7 +122,7 @@
     <footer>
       <div class="footer-bar">
         <div>
-          <button></button>
+          <a href="#Top"><button>Div1</button></a>
         </div>
         <div>
           <button>Switch</button>

@@ -4,14 +4,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
-      body {
-        margin-left: 50px;
+      header {
+        background: linear-gradient(170deg, lightblue, #4682B4);
+      }
+
+      main {
+        margin-left:50px;
         margin-right: 50px;
       }
 
-      header {
-        background: linear-gradient(180deg, lightblue 53%, #4682B4 53% 100%);
-        background: linear-gradient(180deg, lightblue 52%, #4682B4 52% 100%);
+      footer {
+        position: fixed;
+        bottom: 0;
+        background-color: #333333;
+        width: 600px;
       }
 
       table {
@@ -20,7 +26,7 @@
         border-spacing: 0;
         border-radius: 15px;
         border: 1px solid #DDDDDD;
-        width: 100%;
+        width: 30%;
       }
 
       td, th {
@@ -40,30 +46,27 @@
         display: none;
       }
 
-      .header-text {
-        color: white;
-      }
-
-      .paper-title {
-        text-align: center;
-      }
-
       h3 {
         color: #005A9C;
+      }
+
+      .footer-bar {
+        position: relative;
+        display: grid;
+        grid-template-columns: 100px 100px 200px;
       }
     </style>
   </head>
   <body>
     <header>
-      <div>
+      <div style="margin-left:50px;">
         <img src="WebBanner2.png" alt="Banner" width="600" height="177">
-        <h1 class="header-text">ENG0018 Computer Laboratory 2025/26</h1>
-        <h2 class="header-text">Student URN: 6928581</h2>
+        <h1>ENG0018 Computer Laboratory 2025/26</h1>
       </div>
     </header>
     <main>
 
-    <h2 class="paper-title"><b>Conference Paper: Bridge Deck Repairs</b></h2>
+    <h2><b>Conference Paper: Bridge Deck Repairs</b></h2>
     <hr>
 
     <table>
@@ -116,6 +119,17 @@
     <hr>
     </main>
     <footer>
+      <div class="footer-bar">
+        <div>
+          <button></button>
+        </div>
+        <div>
+          <button>Switch</button>
+        </div>
+        <div>
+          <h6 style="color:white;">Student URN: 6928581</h6>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

@@ -8,12 +8,12 @@
         background-color: white;
       }
 
-      body {
+      main {
         margin-left: 50px;
         margin-right: 50px;
       }
 
-      section {
+      .header-bar {
         position: sticky;
         top: 0px;
         background-color: #333333;
@@ -21,7 +21,7 @@
         width: 100%;
       }
 
-      .section-info {
+      .header-bar-info {
         position: absolute;
         background-color: #333333;
         border-radius: 5px;
@@ -29,6 +29,11 @@
         width: 100px;
         display: grid;
         grid-template-columns: 100px;
+        text-align: center;
+      }
+
+      section {
+        margin-left: 50px;
         text-align: center;
       }
 
@@ -72,18 +77,18 @@
   </head>
   <body>
     <header>
-      <section>
-      <div class="section-info">
-        <div>
-        <button onclick='toogleTheme()'>Switch</button>
+      <div class="header-bar">
+        <div class="header-bar-info">
+          <div>
+            <button onclick='toogleTheme()'>Switch</button>
+          </div>
         </div>
       </div>
-      </section>
-      <div>
-        <img src="WebBanner2.png" alt="Banner" width="600" height="177">
-      </div>
+      <section>
+      <img src="WebBanner2.png" alt="Banner" width="600" height="177">
       <h1>ENG0018 Computer Laboratory 2025/26</h1>
       <h2>Student URN: 6928581</h2>
+      </section>
     </header>
     <main>
     <h2><b>Conference Paper: Bridge Deck Repairs</b></h2>

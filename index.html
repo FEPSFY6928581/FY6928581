@@ -5,8 +5,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
       header {
-        background: linear-gradient(173deg, lightblue 25%, #4682B4 25% 50%, Tomato 50% 75%, #F1C40F 75%);
-        color: white;
+        background-color: lightblue;
       }
 
       main {
@@ -14,14 +13,30 @@
         margin-right: 50px;
       }
 
-      footer {
+      section {
+        position: sticky;
+        top: 0px;
         background-color: #333333;
-        position: fixed;
         height: 45px;
-        right: 75px;
-        bottom: 0px;
-        width: 250px;
-        border-radius: 10px
+        width: 100%;
+      }
+
+      .section-info {
+        position: absolute;
+        background-color: #808080;
+        border-radius: 5px;
+        left: 50px;
+        width: 200px;
+        display: grid;
+        grid-template-columns: 150px;
+        text-align: center;
+      }
+
+      button {
+        border-width: 3px;
+        border-color: white;
+        border-radius: 3px;
+        cursor: pointer;
       }
 
       table {
@@ -53,41 +68,24 @@
       h3 {
         color: #005A9C;
       }
-
-      .footer-bar {
-        position: absolute;
-        width: 200px;
-        display: grid;
-        grid-template-columns: 100px 100px;
-        text-align: center;
-      }
-
-      button {
-        margin-top: 7px;
-        border-width: 3px;
-        border-color: white;
-        border-radius: 3px;
-        cursor: pointer;
-      }
-    
-      .arrow {
-        transform: rotate(-90deg);
-      }
     </style>
   </head>
   <body>
-    <script>
-      
-    </script>
-    <header id="Top">
+    <header>
       <div style="margin-left:50px;">
         <img src="WebBanner2.png" alt="Banner" width="600" height="177">
-        <h1>ENG0018 Computer Laboratory 2025/26</h1>
-        <h2>Student URN: 6928581</h2>
       </div>
     </header>
+    <section>
+      <div class="section-info">
+        <div>
+        <button onclick='toogleTheme()'>Switch</button>
+        </div>
+      </div>
+    </section>
     <main>
-
+    <h1>ENG0018 Computer Laboratory 2025/26</h1>
+    <h2>Student URN: 6928581</h2>
     <h2><b>Conference Paper: Bridge Deck Repairs</b></h2>
     <hr>
 
@@ -141,14 +139,11 @@
     <hr>
     </main>
     <footer>
-      <div class="footer-bar">
-        <div> 
-          <a href="#Top"><button><div class="arrow">&#x27A4;<div></button></a>
-        </div>
-        <div>
-          <button>Switch</button>
-        </div>
-      </div>
     </footer>
+    <script>
+      function toogleTheme() {
+        
+      }
+    </script>
   </body>
 </html>

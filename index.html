@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
       body {
-        background-color: #EAEAE3;
+        background-color: white;
       }
       
       main {
@@ -19,15 +19,14 @@
         border-radius: 0 0 15px 15px;
         right: 75px;
         background-color: #516C94;
-        height: 45px;
+        height: 55px;
         width: 400px;
       }
 
       .header-bar-info {
         position: absolute;
-        background-color: #55759B;
-        margin: 0 auto;
-        margin-top: 7px;
+        background-color: steelblue;
+        margin-top: 12px;
         border-radius: 5px;
         width: 180px;
         display: grid;
@@ -40,6 +39,9 @@
       }
 
       button {
+        height: 40px;
+        width: 40px;
+        background-color: #EAEAE3;
         border-width: 3px;
         border-color: white;
         border-radius: 3px;
@@ -82,13 +84,13 @@
       <div class="header-bar">
         <div class="header-bar-info">
           <div>
-            <a href="#Top"><button style="transform: rotate(0);">&#x27A4;</button></a>
+            <a href="#Top"><button><div style="transform:rotate(-45deg);font-size:25px;">&#x27A4;</div></button></a>
           </div>
           <div>
-            <button onclick='lightTheme()'>&#x2600;</button>
+            <button onclick='lightTheme()'><div style="font-size:25px;">&#x2600;</div></button>
           </div>
           <div>
-            <button onclick='darkTheme()'>&#x263D;</button>
+            <button onclick='darkTheme()'><div style="transform:rotate(30deg);font-size:25px;">&#x263D;</div></button>
           </div>
         </div>
       </div>

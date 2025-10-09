@@ -159,6 +159,10 @@
         body.style.color = "black";
         let webbanner = document.getElementById("Top");
         webbanner.src = "WebBanner2.png";
+        let subheading = document.getElementsByTagName("h3");
+        for (var i = 0; i < subheading.length; i++) {
+          subheading[i].style.color = "#005A9C";
+        }
       }
       function darkTheme() {
         let body = document.getElementById("body");
@@ -167,6 +171,10 @@
         body.style.color = "white";
         let webbanner = document.getElementById("Top");
         webbanner.src = "WebBanner2-darktheme.png";
+        let subheading = document.getElementsByTagName("h3");
+        for (var i = 0; i < subheading.length; i++) {
+          subheading[i].style.color = "#00BFFF";
+        }
       }
     </script>
   </body>

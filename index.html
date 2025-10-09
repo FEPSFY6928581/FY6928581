@@ -3,6 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preload" as="image" src="WebBanner2-darktheme.png">
     <script type=”text/javascript” src=https://www.gstatic.com/charts/loader.js></script>
     <style>
       body {
@@ -163,6 +164,7 @@
         for (var i = 0; i < subheading.length; i++) {
           subheading[i].style.color = "#005A9C";
         }
+        let x = document.getElementsByTagName("tr");
       }
       function darkTheme() {
         let body = document.getElementById("body");
@@ -173,7 +175,11 @@
         webbanner.src = "WebBanner2-darktheme.png";
         let subheading = document.getElementsByTagName("h3");
         for (var i = 0; i < subheading.length; i++) {
-          subheading[i].style.color = "#00BFFF";
+          subheading[i].style.color = "#6BAED8";
+        }
+        let x = document.getElementsByTagName("tr");
+        for x:nth-child(even) {
+          x[i].style.background = "#7E7E7E";
         }
       }
     </script>

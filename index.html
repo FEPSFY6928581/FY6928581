@@ -18,9 +18,10 @@
         position: fixed;
         place-items: center;
         top: 0px;
-        border: 1px groove #DDDDDD;
+        border: 2px groove #DDDDDD;
+        border-radius: 0 0 15px 15px;
         right: 75px;
-        background-color: #55759B;
+        background-color: #008CBA;
         height: 55px;
         width: 240px;
       }
@@ -30,7 +31,7 @@
         margin-top: 5px;
         width: 240px;
         display: grid;
-        grid-template-columns: 80px 80px 80px;
+        grid-template-columns: 60px 60px 60px;
         text-align: center;
       }
 
@@ -39,6 +40,8 @@
       }
 
       button {
+        width: 42.5px;
+        border-radius: 42.5px;
         border-width: 3px;
         border-color: white;
         border-radius: 3px;
@@ -81,10 +84,10 @@
       <div class="header-bar">
         <div class="header-bar-info">
           <div>
-            <a href="#Top"><button><div style="transform:rotate(-90deg);font-size:23px;">&#x27A4;</div></button></a>
+            <a href="#Top"><button><div style="transform:rotate(-90deg);font-size:23px;">&#x279C;</div></button></a>
           </div>
           <div>
-            <button onclick='lightTheme()'><div style="transform:rotate(-90deg);font-size:23px;">&#x2600;</div></button>
+            <button onclick='lightTheme()'><div style="transform:rotate(-90deg);font-size:23px;color:#FEE12B;">&#x2600;</div></button>
           </div>
           <div>
             <button onclick='darkTheme()'><div style="transform:rotate(30deg);font-size:23px;">&#x263D;</div></button>

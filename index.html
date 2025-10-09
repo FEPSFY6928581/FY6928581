@@ -86,10 +86,10 @@
             <a href="#Top"><button><div style="transform:rotate(-90deg);font-size:23px;">&#x279C;</div></button></a>
           </div>
           <div>
-            <button onclick='lightTheme()'><div style="transform:rotate(-90deg);font-size:23px;color:#FCD12A;">&#x2600;</div></button>
+            <button onclick="lightTheme()"><div style="transform:rotate(-90deg);font-size:23px;color:#FCD12A;">&#x2600;</div></button>
           </div>
           <div>
-            <button onclick='darkTheme()'><div style="transform:rotate(30deg);font-size:23px;">&#x263D;</div></button>
+            <button onclick="darkTheme()"><div style="transform:rotate(30deg);font-size:23px;">&#x263D;</div></button>
           </div>
         </div>
       </div>
@@ -154,19 +154,21 @@
     </main>
     <script>
       function lightTheme() {
-        let body = document.getElementById("body");
+        var body = document.getElementById("body");
         body.style.background = "#FAFAFA";
         body.style.color = "black";
-        let subheading = document.getElementsByTagName("h3");
+        var subheading = document.getElementsByTagName("h3");
         subheading.style.color = "#005A9C";
+        var webbanner = document.getElementById("Top");
+        webbanner.src = "WebBanner2.png";
       }
       function darkTheme() {
-        let body = document.getElementById("body");
+        var body = document.getElementById("body");
         body.style.background = "#2F2F2F";
         body.style.color = "white";
-        let subheading = document.getElementsByTagName("h3");
+        var x = document.getElementsByTagName("h3");
         subheading.style.color = "#005A9C";
-        let webbanner = document.getElementById("Top");
+        var webbanner = document.getElementById("Top");
         webbanner.src = "WebBanner2-darktheme.png";
       }
     </script>

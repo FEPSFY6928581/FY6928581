@@ -29,9 +29,9 @@
       .header-bar-info {
         position: absolute;
         margin-top: 5px;
-        width: 180px;
+        width: 210px;
         display: grid;
-        grid-template-columns: 60px 60px 60px;
+        grid-template-columns: 70px 70px 70px;
         text-align: center;
       }
 
@@ -78,7 +78,7 @@
       }
     </style>
   </head>
-  <body>
+  <body id="body">
     <header>
       <div class="header-bar">
         <div class="header-bar-info">
@@ -154,11 +154,19 @@
     </main>
     <script>
       function lightTheme() {
-        
+        let body = document.getElementById("body");
+        body.style.background = "#FAFAFA";
+        body.style.color = "black";
+        let subheading = document.getElementByTagName(h3)
+        subheading.style.color = "#005A9C";
       }
-
       function darkTheme() {
-      
+        let body = document.getElementById("body");
+        body.style.background = "#2F2F2F";
+        body.style.color= "white";
+        let subheading = document.getElementsByTagName(h3)
+        subheading.style.color = "#005A9C";
+      }
     </script>
   </body>
 </html>

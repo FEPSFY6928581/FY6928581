@@ -154,23 +154,18 @@
     </main>
     <script>
       function lightTheme() {
-        var body = document.getElementById("body");
+        let body = document.getElementById("body");
         body.style.background = "#FAFAFA";
         body.style.color = "black";
-        var subheading = document.getElementsByTagName("h3");
-        subheading.style.color = "#005A9C";
-        var webbanner = document.getElementById("Top");
+        let webbanner = document.getElementById("Top");
         webbanner.src = "WebBanner2.png";
       }
       function darkTheme() {
-        var body = document.getElementById("body");
+        let body = document.getElementById("body");
         console.log(body);
         body.style.background = "#2F2F2F";
         body.style.color = "white";
-        var subheading = document.getElementsByTagName("h3");
-        console.log(subheading);
-        subheading.style.color = "#005A9C";
-        var webbanner = document.getElementById("Top");
+        let webbanner = document.getElementById("Top");
         webbanner.src = "WebBanner2-darktheme.png";
       }
     </script>

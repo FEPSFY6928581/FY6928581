@@ -22,7 +22,7 @@
         border: 1px groove #DDDDDD;
         border-radius: 0 0 15px 15px;
         right: 75px;
-        background-color: #008CBA;
+        background-color: #DDDDDD;
         height: 55px;
         width: 240px;
       }
@@ -164,6 +164,11 @@
         for (var i = 0; i < subheading.length; i++) {
           subheading[i].style.color = "#005A9C";
         }
+        let tab = document.getElementsByTagName("tr");
+        tab[1].style.background = "#DDDDDD";
+        tab[3].style.background = "#DDDDDD";
+        let bar = document.getElementById("bar");
+        bar.style.background = "#DDDDDD";
       }
       function darkTheme() {
         let body = document.getElementById("body");
@@ -176,6 +181,11 @@
         for (var i = 0; i < subheading.length; i++) {
           subheading[i].style.color = "#6BAED8";
         }
+        let tab = document.getElementsByTagName("tr");
+        tab[1].style.background = "#7E7E7E";
+        tab[3].style.background = "#7E7E7E";
+        let bar = document.getElementById("bar");
+        bar.style.background = "7E7E7E";
       }
     </script>
   </body>

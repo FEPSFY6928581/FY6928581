@@ -6,37 +6,37 @@
     <script type=”text/javascript” src=https://www.gstatic.com/charts/loader.js></script>
     <style>
       body {
-        background-color: #FAFAFA;
+        background-color: white;
       }
       
       main {
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 290px;
+        margin-right: 290px;
       }
 
-      .header-bar {
+      .control-bar {
         position: fixed;
         place-items: center;
         top: 0px;
         border: 1px groove #DDDDDD;
-        border-radius: 0 0 15px 15px;
-        right: 75px;
+        border-radius: 0 15px 0 15px;
+        right: 0px;
         background-color: #7E7E7E;
-        height: 55px;
-        width: 240px;
+        height: 240px;
+        width: 55px;
       }
 
-      .header-bar-info {
+      .control-bar-info {
         position: absolute;
-        margin-top: 5px;
-        width: 210px;
+        margin-top: 0px;
+        width: 70px;
         display: grid;
-        grid-template-columns: 70px 70px 70px;
+        grid-template-columns: 70px;
         text-align: center;
       }
 
-      section {
-        margin-left: 50px;
+      .header-bar {
+        margin-left: 290px;
       }
 
       .controlButton {
@@ -60,12 +60,19 @@
         border-spacing: 0;
         border-radius: 15px;
         border: 1px solid #DDDDDD;
-        width: 100%;
+        width: 80%;
       }
 
       td, th {
         text-align: left;
         padding: 8px;
+      }
+
+      .leftPanel {
+        position: sticky;
+        left: 0px;
+        width: 290px;
+        place-items: center;
       }
 
       tr:nth-child(even) {
@@ -87,8 +94,13 @@
   </head>
   <body id="body">
     <header>
-      <div id ="bar" class="header-bar">
-        <div class="header-bar-info">
+      <div class="header-bar">
+        <img id="Top" src="WebBanner2-darktheme.png" alt="Banner" width="600" height="177">
+        <h1>ENG0018 Computer Laboratory 2025/26</h1>
+        <h2>Student URN: 6928581</h2>
+      </div>
+      <div id ="bar" class="control-bar">
+        <div class="control-bar-info">
           <div>
             <a href="#Top"><button class="controlButton"><div style="transform:rotate(-90deg);font-size:23px;">&#x279C;</div></button></a>
           </div>
@@ -100,33 +112,29 @@
           </div>
         </div>
       </div>
-      <section>
-        <img id="Top" src="WebBanner2.png" alt="Banner" width="600" height="177">
-        <h1>ENG0018 Computer Laboratory 2025/26</h1>
-        <h2>Student URN: 6928581</h2>
-      </section>
+      <div class="leftPanel">
+      <table>
+        <tr>
+          <th><h3>Table of Contents</h3></th>
+        </tr>
+        <tr>
+          <td><a href="#Abstract">Abstract</td>
+        </tr>
+        <tr>
+          <td><a href="#Introduction">Introduction</td>
+        </tr>
+        <tr>
+          <td><a href="#Analysis and Discussion">Analysis and Discussion</td>
+        </tr>
+        <tr>
+          <td><a href="#References">References</td>
+        </tr>
+      </table>
+    </div>
     </header>
     <main>
-    <h2><b>Conference Paper: Bridge Deck Repairs</b></h2>
+    <h2><b>Conference Paper: </b></h2>
     <hr>
-
-    <table>
-      <tr>
-        <th><h3>Table of Contents</h3></th>
-      </tr>
-      <tr>
-        <td><a href="#Abstract">Abstract</td>
-      </tr>
-      <tr>
-        <td><a href="#Introduction">Introduction</td>
-      </tr>
-      <tr>
-        <td><a href="#Analysis and Discussion">Analysis and Discussion</td>
-      </tr>
-      <tr>
-        <td><a href="#References">References</td>
-      </tr>
-    </table>
     <h3 id="Abstract">Abstract</h3>
     <p class="ex1">
       <pre>
@@ -207,14 +215,17 @@
       // Initial load to display the time on page load
       window.onload = getLastUpdatedTime;
       <!-- ////////////////////////////// Word count function ///////////////////////////// -->
-      // Function to calculate and display total word count from selected sections
+      // Function to calculate and display word count for a specified section
+      function displayWordCount(sectionId, outputId) {
+        const text = document.getElementById(sectionId).textContent;
+        const wordArray = text.trim().split(/\s+/);
+        const wordCount = wordArray.length;
+        return wordCount;
+      }
       function displayTotalWordCount() {
-        // Calculate word count for each section and accumulate the total
         const IntroductionCount = displayWordCount("Introduction_InText");
         const AnalysisCount = displayWordCount("Analysis_InText");
-        // Calculate the sum of all selected sections
         const totalWordCount = IntroductionCount + AnalysisCount;
-        // Display the total word count
         document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
       }
       // Run the function for specific sections and display total count when the page loads
@@ -224,30 +235,26 @@
         let body = document.getElementById("body");
         body.style.background = "#FAFAFA";
         body.style.color = "black";
-        let webbanner = document.getElementById("Top");
-        webbanner.src = "WebBanner2.png";
+        let tab = document.getElementsByTagName("tr");
+        tab[1].style.background = "#DDDDDD";
+        tab[3].style.background = "#DDDDDD";
         let subheading = document.getElementsByTagName("h3");
         for (var i = 0; i < subheading.length; i++) {
           subheading[i].style.color = "#005A9C";
         }
-        let tab = document.getElementsByTagName("tr");
-        tab[1].style.background = "#DDDDDD";
-        tab[3].style.background = "#DDDDDD";
       }
       function darkTheme() {
         let body = document.getElementById("body");
         console.log(body);
         body.style.background = "#2F2F2F";
         body.style.color = "white";
-        let webbanner = document.getElementById("Top");
-        webbanner.src = "WebBanner2-darktheme.png";
+        let tab = document.getElementsByTagName("tr");
+        tab[1].style.background = "#7E7E7E";
+        tab[3].style.background = "#7E7E7E";
         let subheading = document.getElementsByTagName("h3");
         for (var i = 0; i < subheading.length; i++) {
           subheading[i].style.color = "#6BAED8";
         }
-        let tab = document.getElementsByTagName("tr");
-        tab[1].style.background = "#7E7E7E";
-        tab[3].style.background = "#7E7E7E";
       }
     </script>
   </body>

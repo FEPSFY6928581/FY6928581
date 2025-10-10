@@ -170,9 +170,7 @@
     <hr>
     </main>
     <script>
-      <!-- //////////////////////////////////////////////////////////////////////////////// -->
       <!-- ////////////////////////////// Adding last update ////////////////////////////// -->
-      <!-- //////////////////////////////////////////////////////////////////////////////// -->
       async function getLastUpdatedTime() {
         const username = 'FEPSFY6928581';
         const repo = 'FY6928581';
@@ -210,9 +208,7 @@
       }
       // Initial load to display the time on page load
       window.onload = getLastUpdatedTime;
-      <!-- //////////////////////////////////////////////////////////////////////////////// -->
       <!-- ////////////////////////////// Word count function ///////////////////////////// -->
-      <!-- //////////////////////////////////////////////////////////////////////////////// -->
       // Function to calculate and display word count for a specified section
       function displayWordCount(sectionId, outputId) {
         // Get the text content from the specified section
@@ -227,8 +223,8 @@
       // Function to calculate and display total word count from selected sections
       function displayTotalWordCount() {
         // Calculate word count for each section and accumulate the total
-        const IntroductionCount = displayWordCount("Introduction_InText");
-        const AnalysisCount = displayWordCount("Analysis_InText");
+        const IntroductionCount = displayWordCount("Introduction");
+        const AnalysisCount = displayWordCount("Analysis and Discussion");
         // Calculate the sum of all selected sections
         const totalWordCount = IntroductionCount + AnalysisCount;
         // Display the total word count
@@ -236,9 +232,7 @@
       }
       // Run the function for specific sections and display total count when the page loads
       window.onload = displayTotalWordCount;
-      <!-- //////////////////////////////////////////////////////////////////////////////// -->
       <!-- ////////////////////////////// Light & Dark theme ////////////////////////////// -->
-      <!-- //////////////////////////////////////////////////////////////////////////////// -->
       function lightTheme() {
         let body = document.getElementById("body");
         body.style.background = "#FAFAFA";

@@ -40,7 +40,7 @@
         margin-left: 50px;
       }
 
-      button {
+      .controlButton {
         width: 42.5px;
         border-radius: 42.5px;
         border-width: 3px;
@@ -48,6 +48,13 @@
         cursor: pointer;
       }
 
+      .verifyButton {
+        cursor: pointer;
+        border-radius: 4px;
+        border-width: 3px;
+        border-color: white;
+      }
+      
       table {
         font-family: arial, sans-serif;
         boder-collapse: separate;
@@ -84,13 +91,13 @@
       <div id ="bar" class="header-bar">
         <div class="header-bar-info">
           <div>
-            <a href="#Top"><button><div style="transform:rotate(-90deg);font-size:23px;">&#x279C;</div></button></a>
+            <a href="#Top"><button class="controlButton"><div style="transform:rotate(-90deg);font-size:23px;">&#x279C;</div></button></a>
           </div>
           <div>
-            <button onclick="lightTheme()"><div style="transform:rotate(-90deg);font-size:23px;color:#FCD12A;">&#x2600;</div></button>
+            <button class="controlButton" onclick="lightTheme()"><div style="transform:rotate(-90deg);font-size:23px;color:#FCD12A;">&#x2600;</div></button>
           </div>
           <div>
-            <button onclick="darkTheme()"><div style="transform:rotate(30deg);font-size:23px;">&#x263D;</div></button>
+            <button class="controlButton" onclick="darkTheme()"><div style="transform:rotate(30deg);font-size:23px;">&#x263D;</div></button>
           </div>
         </div>
       </div>
@@ -158,9 +165,12 @@
     <!-- Last commit time display -->
     <div id="last-updated">Loading last update time...</div>
     <!-- Verify Button -->
-    <button onclick="verifyLastUpdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
-    Verify Last Modified Time
-    </button>
+    <span><button class="verifyButton" onclick="verifyLastUpdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
+      <small>Verify Last Modified Time</small>
+    </button></span>
+    <!-- Placeholder for total word count -->
+    <p id="totalWordCount"></p>
+    <hr>
     </main>
     <script>
       async function getLastUpdatedTime() {

@@ -243,6 +243,8 @@
       window.onload = displayTotalWordCount;
       <!-- ////////////////////////////// Light & Dark theme ////////////////////////////// -->
       function lightTheme() {
+        let banner = document.getElementById("Top");
+        banner.src = "WebBanner2.png";
         let body = document.getElementById("body");
         body.style.background = "#F8F9FA";
         let a4 = document.getElementById("a4");
@@ -257,6 +259,8 @@
         }
       }
       function darkTheme() {
+        let banner = document.getElementById("Top");
+        banner.src = "WebBanner2-darktheme.png";
         let body = document.getElementById("body");
         body.style.background = "#2F2F2F";
         let a4 = document.getElementById("a4");

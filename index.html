@@ -9,6 +9,7 @@
         background-color: #F8F9FA;
       }
       body {
+        min-height: 100vh;
         margin-left: 290px;
         margin-right: 290px;
         background-color: white;
@@ -240,8 +241,10 @@
       window.onload = displayTotalWordCount;
       <!-- ////////////////////////////// Light & Dark theme ////////////////////////////// -->
       function lightTheme() {
+        let html = document.getElementById("html");
+        body.style.background = "#F8F9FA";
         let body = document.getElementById("body");
-        body.style.background = "#FAFAFA";
+        body.style.background = "white";
         body.style.color = "black";
         let tab = document.getElementsByTagName("tr");
         tab[1].style.background = "#DDDDDD";
@@ -252,9 +255,11 @@
         }
       }
       function darkTheme() {
+        let html = document.getElementById("html");
+        body.style.background = "#202122";
         let body = document.getElementById("body");
         console.log(body);
-        body.style.background = "#2F2F2F";
+        body.style.background = "#101418";
         body.style.color = "white";
         let tab = document.getElementsByTagName("tr");
         tab[1].style.background = "#7E7E7E";

@@ -34,6 +34,7 @@
         grid-template-columns: 68px 68px 68px;
         text-align: center;
         align-items: center;
+        margin-top: 5px;
       }
       
       .controlButton {
@@ -86,7 +87,7 @@
     <div class="a4" id="a4">
       <header>
         <div>
-          <img id="Top" src="WebBanner2-darktheme.png" alt="Banner" width="600" height="177">
+          <img id="Top" src="WebBanner2.png" alt="Banner" width="600" height="177">
           <h1>ENG0018 Computer Laboratory 2025/26</h1>
           <h2>Student URN: 6928581</h2>
         </div>
@@ -243,8 +244,6 @@
       window.onload = displayTotalWordCount;
       <!-- ////////////////////////////// Light & Dark theme ////////////////////////////// -->
       function lightTheme() {
-        let banner = document.getElementById("Top");
-        banner.src = "WebBanner2.png";
         let body = document.getElementById("body");
         body.style.background = "#F8F9FA";
         let a4 = document.getElementById("a4");
@@ -259,8 +258,6 @@
         }
       }
       function darkTheme() {
-        let banner = document.getElementById("Top");
-        banner.src = "WebBanner2-darktheme.png";
         let body = document.getElementById("body");
         body.style.background = "#2F2F2F";
         let a4 = document.getElementById("a4");

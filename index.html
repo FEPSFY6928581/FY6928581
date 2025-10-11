@@ -10,26 +10,23 @@
       }
       
       .a4 {
-        min-height: 100dvh;
         margin-left: 290px;
         margin-right: 290px;
         background-color: white;
         padding: 0 40px 0 40px;
       }
       
-      .controlBar {
+      .controls {
         position: fixed;
         place-items: center;
-        top: 0px;
-        border: 1px groove #DDDDDD;
-        border-radius: 0 15px 0 15px;
-        right: 0px;
-        background-color: #7E7E7E;
-        height: 240px;
-        width: 55px;
+        border: 1px solid #DDDDDD;
+        border-radius: 15px;
+        height: 55px;
+        width: 100%;
+        margin-top: 50px;
       }
 
-      .controlBarInfo {
+      .controlsPanel {
         position: absolute;
         margin-top: 0px;
         width: 70px;
@@ -76,7 +73,7 @@
         width: 290px;
       }
 
-      .leftPanel {
+      .tablePanel {
         margin-top: 50px;
       }
 
@@ -105,22 +102,9 @@
           <h1>ENG0018 Computer Laboratory 2025/26</h1>
           <h2>Student URN: 6928581</h2>
         </div>
-        <div id ="bar" class="controlBar">
-          <div class="controlBarInfo">
-            <div>
-              <a href="#Top"><button class="controlButton"><div style="transform:rotate(-90deg);font-size:23px;">&#x279C;</div></button></a>
-            </div>
-            <div>
-              <button class="controlButton" onclick="lightTheme()"><div style="transform:rotate(-90deg);font-size:23px;color:#FCD12A;">&#x2600;</div></button>
-            </div>
-            <div>
-              <button class="controlButton" onclick="darkTheme()"><div style="transform:rotate(30deg);font-size:23px;">&#x263D;</div></button>
-            </div>
-          </div>
-        </div>
       </header>
       <div class="sideBar">
-        <div class="leftPanel">
+        <div class="tablePanel">
           <table>
             <tr>
               <th><h3>Table of Contents</h3></th>
@@ -138,6 +122,19 @@
               <td><a href="#References">References</td>
             </tr>
           </table>
+        </div>
+        <div class="controls">
+          <div class="controlsPanel">
+            <div>
+              <a href="#Top"><button class="controlButton"><div style="transform:rotate(-90deg);font-size:23px;">&#x279C;</div></button></a>
+            </div>
+            <div>
+              <button class="controlButton" onclick="lightTheme()"><div style="transform:rotate(-90deg);font-size:23px;color:#FCD12A;">&#x2600;</div></button>
+            </div>
+            <div>
+              <button class="controlButton" onclick="darkTheme()"><div style="transform:rotate(30deg);font-size:23px;">&#x263D;</div></button>
+            </div>
+          </div>
         </div>
       </div>
       <main>
@@ -200,14 +197,14 @@
       <hr>
       </main>
       <footer>
+        <!-- Placeholder for total word count -->
+        <p id="totalWordCount"></p>
         <!-- Last commit time display -->
         <div id="last-updated">Loading last update time...</div>
         <!-- Verify Button -->
         <button class="verifyButton" onclick="verifyLastUpdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
           Verify Last Modified Time
         </button>
-        <!-- Placeholder for total word count -->
-        <p id="totalWordCount"></p>
       </footer>
     </div>
     <script>
@@ -283,7 +280,7 @@
         let body = document.getElementById("body");
         body.style.background = "#202122";
         let a4 = document.getElementById("a4");
-        a4.style.background = "#101418";
+        a4.style.background = "#222021";
         a4.style.color = "white";
         let tab = document.getElementsByTagName("tr");
         tab[1].style.background = "#7E7E7E";

@@ -5,10 +5,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script type=”text/javascript” src=https://www.gstatic.com/charts/loader.js></script>
     <style>
-      html {
-        background-color: #F8F9FA;
-      }
-      body {
+      a4 {
         min-height: 100dvh;
         margin-left: 290px;
         margin-right: 290px;
@@ -99,92 +96,94 @@
     </style>
   </head>
   <body id="body">
-    <header>
-      <div>
-        <img id="Top" src="WebBanner2-darktheme.png" alt="Banner" width="600" height="177">
-        <h1>ENG0018 Computer Laboratory 2025/26</h1>
-        <h2>Student URN: 6928581</h2>
-      </div>
-      <div id ="bar" class="controlBar">
-        <div class="controlBarInfo">
-          <div>
-            <a href="#Top"><button class="controlButton"><div style="transform:rotate(-90deg);font-size:23px;">&#x279C;</div></button></a>
-          </div>
-          <div>
-            <button class="controlButton" onclick="lightTheme()"><div style="transform:rotate(-90deg);font-size:23px;color:#FCD12A;">&#x2600;</div></button>
-          </div>
-          <div>
-            <button class="controlButton" onclick="darkTheme()"><div style="transform:rotate(30deg);font-size:23px;">&#x263D;</div></button>
+    <div id="a4">
+      <header>
+        <div>
+          <img id="Top" src="WebBanner2-darktheme.png" alt="Banner" width="600" height="177">
+          <h1>ENG0018 Computer Laboratory 2025/26</h1>
+          <h2>Student URN: 6928581</h2>
+        </div>
+        <div id ="bar" class="controlBar">
+          <div class="controlBarInfo">
+            <div>
+              <a href="#Top"><button class="controlButton"><div style="transform:rotate(-90deg);font-size:23px;">&#x279C;</div></button></a>
+            </div>
+            <div>
+              <button class="controlButton" onclick="lightTheme()"><div style="transform:rotate(-90deg);font-size:23px;color:#FCD12A;">&#x2600;</div></button>
+            </div>
+            <div>
+              <button class="controlButton" onclick="darkTheme()"><div style="transform:rotate(30deg);font-size:23px;">&#x263D;</div></button>
+            </div>
           </div>
         </div>
+      </header>
+      <div class="sideBar">
+        <div class="leftPanel">
+          <table>
+            <tr>
+              <th><h3>Table of Contents</h3></th>
+            </tr>
+            <tr>
+              <td><a href="#Abstract">Abstract</td>
+            </tr>
+            <tr>
+              <td><a href="#Introduction">Introduction</td>
+            </tr>
+            <tr>
+              <td><a href="#Analysis and Discussion">Analysis and Discussion</td>
+            </tr>
+            <tr>
+              <td><a href="#References">References</td>
+            </tr>
+          </table>
+        </div>
       </div>
-    </header>
-    <div class="sideBar">
-      <div class="leftPanel">
-        <table>
-          <tr>
-            <th><h3>Table of Contents</h3></th>
-          </tr>
-          <tr>
-            <td><a href="#Abstract">Abstract</td>
-          </tr>
-          <tr>
-            <td><a href="#Introduction">Introduction</td>
-          </tr>
-          <tr>
-            <td><a href="#Analysis and Discussion">Analysis and Discussion</td>
-          </tr>
-          <tr>
-            <td><a href="#References">References</td>
-          </tr>
-        </table>
-      </div>
+      <main>
+      <h2><b>Conference Paper: Global Positioning System</b></h2>
+      <hr>
+      <h3 id="Abstract">Abstract</h3>
+      <p class="ex1">
+        <pre>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </pre>
+      </p>
+
+      <h3 id="Introduction">Introduction</h3>
+      <p class="ex1">
+        <pre id="Introduction_InText">
+          Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an
+          intelligent machine through the interaction of an oracle with the machine system, over a sequence of
+          learning epochs.
+        </pre>
+      </p>
+
+      <h3 id="Analysis and Discussion">Analysis and discussion</h3>
+      <p class="ex1">
+        <pre id="Analysis_InText">
+          Imagine some cool stuff H E R E! XD
+        </pre>
+      </p>
+
+      <h3 id="References">References</h3>
+      <p>
+        <pre>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Integer euismod ligula id augue faucibus, in volutpat augue tincidunt.
+        </pre>
+      </p>
+      <hr>
+      </main>
+      <footer>
+        <!-- Last commit time display -->
+        <div id="last-updated">Loading last update time...</div>
+        <!-- Verify Button -->
+        <button class="verifyButton" onclick="verifyLastUpdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
+          Verify Last Modified Time
+        </button>
+        <!-- Placeholder for total word count -->
+        <p id="totalWordCount"></p>
+      </footer>
     </div>
-    <main>
-    <h2><b>Conference Paper: Global Positioning System</b></h2>
-    <hr>
-    <h3 id="Abstract">Abstract</h3>
-    <p class="ex1">
-      <pre>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </pre>
-    </p>
-
-    <h3 id="Introduction">Introduction</h3>
-    <p class="ex1">
-      <pre id="Introduction_InText">
-        Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an
-        intelligent machine through the interaction of an oracle with the machine system, over a sequence of
-        learning epochs.
-      </pre>
-    </p>
-
-    <h3 id="Analysis and Discussion">Analysis and discussion</h3>
-    <p class="ex1">
-      <pre id="Analysis_InText">
-        Imagine some cool stuff H E R E! XD
-      </pre>
-    </p>
-
-    <h3 id="References">References</h3>
-    <p>
-      <pre>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Integer euismod ligula id augue faucibus, in volutpat augue tincidunt.
-      </pre>
-    </p>
-    <hr>
-    </main>
-    <footer>
-      <!-- Last commit time display -->
-      <div id="last-updated">Loading last update time...</div>
-      <!-- Verify Button -->
-      <button class="verifyButton" onclick="verifyLastUpdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
-        Verify Last Modified Time
-      </button>
-      <!-- Placeholder for total word count -->
-      <p id="totalWordCount"></p>
-    </footer>
     <script>
       <!-- ////////////////////////////// Adding last update ////////////////////////////// -->
       async function getLastUpdatedTime() {
@@ -192,11 +191,11 @@
         const repo = 'FY6928581';
         const url = `https://api.github.com/repos/${username}/${repo}/commits`;
         try {
-          const response = await fetch(url, {
+           const response = await fetch(url, {
             method: 'GET',
             headers: {
-              'Accept': 'application/vnd.github.v3+json',
-            }
+               'Accept': 'application/vnd.github.v3+json',
+             }
           });
           if (!response.ok) {
             throw new Error(`Error fetching data: ${response.status} - ${response.statusText}`);
@@ -241,25 +240,25 @@
       window.onload = displayTotalWordCount;
       <!-- ////////////////////////////// Light & Dark theme ////////////////////////////// -->
       function lightTheme() {
-        let html = document.getElement;
-        html.style.background = "#F8F9FA";
         let body = document.getElementById("body");
-        body.style.background = "white";
-        body.style.color = "black";
+        body.style.background = "#F8F9FA";
+        let a4 = document.getElementById("a4");
+        a4.style.background = "white";
+        a4.style.color = "black";
         let tab = document.getElementsByTagName("tr");
         tab[1].style.background = "#DDDDDD";
         tab[3].style.background = "#DDDDDD";
         let subheading = document.getElementsByTagName("h3");
         for (var i = 0; i < subheading.length; i++) {
-          subheading[i].style.color = "#005A9C";
+           subheading[i].style.color = "#005A9C";
         }
       }
       function darkTheme() {
-        let html = document.getElement;
-        html.style.background = "#202122";
         let body = document.getElementById("body");
-        body.style.background = "#101418";
-        body.style.color = "white";
+        body.style.background = "#202122";
+        let a4 = document.getElementById("a4");
+        a4.style.background = "#101418";
+        a4.style.color = "white";
         let tab = document.getElementsByTagName("tr");
         tab[1].style.background = "#7E7E7E";
         tab[3].style.background = "#7E7E7E";

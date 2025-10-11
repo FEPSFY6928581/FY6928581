@@ -206,10 +206,9 @@
             const lastCommitDate = new Date(commits[0].commit.committer.date);
             // Displaying the time on load
             document.getElementById('last-updated').innerText = `Last Modified Time: ${lastCommitDate.toLocaleString()}`;
-          } 
-          else {
-            document.getElementById('last-updated').innerText = 'No commits found in the repository.';
-          }
+          } else {
+              document.getElementById('last-updated').innerText = 'No commits found in the repository.';
+            }
         } 
         catch (error) {
           console.error('Error fetching the last updated time:', error);
@@ -242,7 +241,7 @@
       window.onload = displayTotalWordCount;
       <!-- ////////////////////////////// Light & Dark theme ////////////////////////////// -->
       function lightTheme() {
-        let html = document.getElementById("html");
+        let html = document.getElement;
         html.style.background = "#F8F9FA";
         let body = document.getElementById("body");
         body.style.background = "white";
@@ -256,10 +255,9 @@
         }
       }
       function darkTheme() {
-        let html = document.getElementById("html");
+        let html = document.getElement;
         html.style.background = "#202122";
         let body = document.getElementById("body");
-        console.log(body);
         body.style.background = "#101418";
         body.style.color = "white";
         let tab = document.getElementsByTagName("tr");

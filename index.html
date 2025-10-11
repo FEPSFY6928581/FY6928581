@@ -9,7 +9,7 @@
         background-color: #F8F9FA;
       }
       body {
-        min-height: 100vh;
+        min-height: 100dvh;
         margin-left: 290px;
         margin-right: 290px;
         background-color: white;
@@ -76,7 +76,8 @@
       }
 
       .leftPanel {
-        position: absolute;
+        margin-top: 50px;
+        position: sticky;
         top: 0px;
       }
 
@@ -242,7 +243,7 @@
       <!-- ////////////////////////////// Light & Dark theme ////////////////////////////// -->
       function lightTheme() {
         let html = document.getElementById("html");
-        body.style.background = "#F8F9FA";
+        html.style.background = "#F8F9FA";
         let body = document.getElementById("body");
         body.style.background = "white";
         body.style.color = "black";
@@ -256,7 +257,7 @@
       }
       function darkTheme() {
         let html = document.getElementById("html");
-        body.style.background = "#202122";
+        html.style.background = "#202122";
         let body = document.getElementById("body");
         console.log(body);
         body.style.background = "#101418";

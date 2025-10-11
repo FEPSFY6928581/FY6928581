@@ -16,29 +16,23 @@
         padding: 0 40px 0 40px;
       }
 
-      .sideBar {
+      .controlsPanel {
         position: fixed;
         place-items: center;
-        top: 0px;
-        left: 0px;
-        bottom: 0px;
-        width: 290px;
-      }
-
-      .controlsPanel {
         border-radius: 0 0 15px 15px;
         border: 1px solid #DDDDDD;
-        border-top: none;
-        width: 204px;
-        height: 55px;
-        display: grid;
-        grid-template-columns: 68px 68px 68px;
-        text-align: center;
-        align-items:center;
+        top: 0px;
+        right: 330px;
+        height: 55px
       }
 
-       .tablePanel {
-        margin-top: 50px;
+      .controls {
+        position: absolute;
+        display: grid;
+        width: 204px;
+        grid-template-columns: 68px 68px 68px;
+        text-align: center;
+        align-items: center;
       }
       
       .controlButton {
@@ -62,7 +56,7 @@
         border-spacing: 0;
         border-radius: 15px;
         border: 1px solid #DDDDDD;
-        width: 204px;
+        width: 100%;
       }
 
       td, th {
@@ -96,46 +90,39 @@
           <h2>Student URN: 6928581</h2>
         </div>
       </header>
-      <div class="sideBar">
-        <div class="tablePanel">
-          <table>
-            <tr>
-              <th><h3>Table of Contents</h3></th>
-            </tr>
-            <tr>
-              <td><a href="#Abstract">Abstract</td>
-            </tr>
-            <tr>
-              <td><a href="#Introduction">Introduction</td>
-            </tr>
-            <tr>
-              <td><a href="#Analysis and Discussion">Analysis and Discussion</td>
-            </tr>
-            <tr>
-              <td><a href="#References">References</td>
-            </tr>
-          </table>
-        </div>
-        <div style="margin-top:50px;border:1px solid #DDDDDD;border-radius:15px 15px 0 0;width:204px;text-align:center;">
-          <h3>Controls</h3>
-        </div>
+      <div class="controlsPanel">
         <div class="controls">
-          <div class="controlsPanel">
-            <div>
-              <a href="#Top"><button class="controlButton"><div style="transform:rotate(-90deg);font-size:23px;">&#x279C;</div></button></a>
-            </div>
-            <div>
-              <button class="controlButton" onclick="lightTheme()"><div style="transform:rotate(-90deg);font-size:23px;color:#FCD12A;">&#x2600;</div></button>
-            </div>
-            <div>
-              <button class="controlButton" onclick="darkTheme()"><div style="transform:rotate(30deg);font-size:23px;">&#x263D;</div></button>
-            </div>
+          <div>
+            <a href="#Top"><button class="controlButton"><div style="transform:rotate(-90deg);font-size:23px;">&#x279C;</div></button></a>
+          </div>
+          <div>
+            <button class="controlButton" onclick="lightTheme()"><div style="transform:rotate(-90deg);font-size:23px;color:#FCD12A;">&#x2600;</div></button>
+          </div>
+          <div>
+            <button class="controlButton" onclick="darkTheme()"><div style="transform:rotate(30deg);font-size:23px;">&#x263D;</div></button>
           </div>
         </div>
       </div>
       <main>
       <h2><b>Conference Paper: Global Positioning System</b></h2>
       <hr>
+      <table>
+        <tr>
+          <th><h3>Table of Contents</h3></th>
+        </tr>
+        <tr>
+          <td><a href="#Abstract">Abstract</td>
+        </tr>
+        <tr>
+          <td><a href="#Introduction">Introduction</td>
+        </tr>
+        <tr>
+          <td><a href="#Analysis and Discussion">Analysis and Discussion</td>
+        </tr>
+        <tr>
+          <td><a href="#References">References</td>
+        </tr>
+      </table>
       <h3 id="Abstract">Abstract</h3>
       <p class="ex1">
         <pre>
@@ -272,7 +259,7 @@
         let body = document.getElementById("body");
         body.style.background = "#202122";
         let a4 = document.getElementById("a4");
-        a4.style.background = "#222021";
+        a4.style.background = "#2F2F2F";
         a4.style.color = "white";
         let tab = document.getElementsByTagName("tr");
         tab[1].style.background = "#7E7E7E";

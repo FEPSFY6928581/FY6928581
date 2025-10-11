@@ -15,26 +15,32 @@
         background-color: white;
         padding: 0 40px 0 40px;
       }
-      
-      .controls {
+
+      .sideBar {
         position: fixed;
         place-items: center;
-        border: 1px solid #DDDDDD;
-        border-radius: 15px;
-        height: 55px;
-        width: 100%;
-        margin-top: 50px;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        width: 290px;
       }
 
       .controlsPanel {
-        position: absolute;
-        margin-top: 0px;
-        width: 70px;
+        border-radius: 0 0 15px 15px;
+        border: 1px solid #DDDDDD;
+        border-top: none;
+        width: 201px;
+        height: 55px;
         display: grid;
-        grid-template-columns: 70px;
+        grid-template-columns: 67px 67px 67px;
         text-align: center;
+        align-items:center;
       }
 
+       .tablePanel {
+        margin-top: 50px;
+      }
+      
       .controlButton {
         width: 42.5px;
         border-radius: 42.5px;
@@ -56,27 +62,14 @@
         border-spacing: 0;
         border-radius: 15px;
         border: 1px solid #DDDDDD;
-        width: 100%;
+        width: 201px;
       }
 
       td, th {
         text-align: left;
         padding: 8px;
       }
-
-      .sideBar {
-        position: fixed;
-        place-items: center;
-        top: 0px;
-        left: 0px;
-        bottom: 0px;
-        width: 290px;
-      }
-
-      .tablePanel {
-        margin-top: 50px;
-      }
-
+      
       tr:nth-child(even) {
         background-color: #DDDDDD;
       }
@@ -123,6 +116,9 @@
             </tr>
           </table>
         </div>
+        <div style="margin-top: 50px;border: 1px solid #DDDDDD;border-radius: 15px 15px 0 0;">
+          <h3>Controls</h3>
+        </div>
         <div class="controls">
           <div class="controlsPanel">
             <div>
@@ -146,7 +142,6 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </pre>
       </p>
-
       <h3 id="Introduction">Introduction</h3>
       <p class="ex1">
         <pre id="Introduction_InText">
@@ -155,7 +150,6 @@
           learning epochs.
         </pre>
       </p>
-
       <h3 id="Analysis and Discussion">Analysis and discussion</h3>
       <p class="ex1">
         <pre id="Analysis_InText">
@@ -186,7 +180,6 @@
           learning epochs.
         </pre>
       </p>
-
       <h3 id="References">References</h3>
       <p>
         <pre>
@@ -214,11 +207,11 @@
         const repo = 'FY6928581';
         const url = `https://api.github.com/repos/${username}/${repo}/commits`;
         try {
-           const response = await fetch(url, {
+          const response = await fetch(url, {
             method: 'GET',
             headers: {
-               'Accept': 'application/vnd.github.v3+json',
-             }
+              'Accept': 'application/vnd.github.v3+json',
+            }
           });
           if (!response.ok) {
             throw new Error(`Error fetching data: ${response.status} - ${response.statusText}`);
@@ -231,11 +224,10 @@
           } else {
               document.getElementById('last-updated').innerText = 'No commits found in the repository.';
             }
-        } 
-        catch (error) {
-          console.error('Error fetching the last updated time:', error);
-          document.getElementById('last-updated').innerText = 'Error fetching update time. Please check the repository details.';
-        }
+        } catch (error) {
+            console.error('Error fetching the last updated time:', error);
+            document.getElementById('last-updated').innerText = 'Error fetching update time. Please check the repository details.';
+          }
       }
       // Function to verify the last update time by re-fetching it from the API
       async function verifyLastUpdatedTime() {

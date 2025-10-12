@@ -10,6 +10,8 @@
       }
       
       .a4 {
+        position: static;
+        bottom: 0px;
         margin-left: 290px;
         margin-right: 290px;
         background-color: white;
@@ -50,6 +52,9 @@
         border-radius: 4px;
         border-width: 3px;
         border-color: white;
+        display: block; 
+        margin: auto; 
+        padding: 8px 16px;
       }
       
       table {
@@ -184,7 +189,7 @@
         <!-- Last commit time display -->
         <div id="last-updated">Loading last update time...</div>
         <!-- Verify Button -->
-        <button class="verifyButton" onclick="verifyLastUpdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
+        <button class="verifyButton" onclick="verifyLastUpdatedTime()">
           Verify Last Modified Time
         </button>
       </footer>

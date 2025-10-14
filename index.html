@@ -16,6 +16,7 @@
       }
 
       header {
+        display: flex;
         padding: 0 40px 0 40px;
       }
 
@@ -24,7 +25,6 @@
       }
 
       footer {
-        background-color: #516C94;
         padding: 10px 40px;
       }
 
@@ -39,10 +39,10 @@
       .controls {
         position: absolute;
         display: grid;
-        width: 600px;
-        grid-template-columns: 300px 300px;
+        width: 180px;
+        border-radius: 15px;
+        grid-template-columns: 180px;
         text-align: center;
-        align-items: center;
         margin: 5px;
         border: 1px solid #A2A9B1;
       }
@@ -101,24 +101,24 @@
     </style>
   </head>
   <body id="body">
-    <div class="controlsPanel">
-      <div class="controls">
-        <div>
-          Light Theme
-          <button class="controlButton" onclick="lightTheme()"><div style="transform:rotate(-90deg);font-size:23px;color:#FCD12A;border-left:5px;">&#x2600;</div></button>
-        </div>
-        <div>
-          Dark Theme
-          <button class="controlButton" onclick="darkTheme()"><div style="transform:rotate(30deg);font-size:23px;">&#x263D;</div></button>
-        </div>
-      </div>
-    </div>
     <header>
-      <div style="max-width:600px;">
+      <div style="max-width:900px;">
         <img id="Top" src="WebBanner2-darktheme.png" alt="Banner" width="100%" height="auto">
-      </div>
         <h1>ENG0018 Computer Laboratory 2025/26</h1>
         <h2>Student URN: 6928581</h2>
+      </div>
+      <div class="controlsPanel">
+        <div class="controls">
+          <div>
+            Light Theme
+            <button class="controlButton" onclick="lightTheme()"><div style="transform:rotate(-90deg);font-size:23px;color:#FCD12A;border-left:5px;">&#x2600;</div></button>
+          </div>
+          <div>
+            Dark Theme
+            <button class="controlButton" onclick="darkTheme()"><div style="transform:rotate(30deg);font-size:23px;">&#x263D;</div></button>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
       <h2><b>Conference Paper: Global Positioning System</b></h2>

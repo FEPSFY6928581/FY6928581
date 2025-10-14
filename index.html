@@ -5,10 +5,6 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script type=”text/javascript” src=https://www.gstatic.com/charts/loader.js></script>
     <style>
-       html {
-        background-color: #F8F9FA;
-      }
-      
       body {
         background-color: white;
         margin-left: 15.2%;
@@ -27,23 +23,17 @@
       footer {
         padding: 10px 40px;
       }
-
-      .controlsPanel {
-        position: static;
-        place-items: right;
-        background-color: skyblue;
-        height: 55px;
-        width: 100%;
-      }
-
+      
       .controls {
         position: absolute;
         display: grid;
         width: 180px;
+        height: 180px;
         border-radius: 15px;
         grid-template-columns: 180px;
         text-align: center;
-        margin: 5px;
+        margin: auto;
+        background-color: #DDDDDD;
         border: 1px solid #A2A9B1;
       }
       
@@ -99,7 +89,7 @@
         border-top: 1px solid #A2A9B1;
       }
 
-      @media only screen and (max-width: 900px) {
+      @media only screen and (max-width: 1200px) {
         body {
           margin: 0;
         }
@@ -113,16 +103,14 @@
         <h1>ENG0018 Computer Laboratory 2025/26</h1>
         <h2>Student URN: 6928581</h2>
       </div>
-      <div class="controlsPanel">
-        <div class="controls">
-          <div>
-            Light Theme
-            <button class="controlButton" onclick="lightTheme()"><div style="transform:rotate(-90deg);font-size:23px;color:#FCD12A;border-left:5px;">&#x2600;</div></button>
-          </div>
-          <div>
-            Dark Theme
-            <button class="controlButton" onclick="darkTheme()"><div style="transform:rotate(30deg);font-size:23px;">&#x263D;</div></button>
-          </div>
+      <div class="controls">
+        <div>
+          Light Theme
+          <button class="controlButton" onclick="lightTheme()"><div style="transform:rotate(-90deg);font-size:23px;color:#FCD12A;border-left:5px;">&#x2600;</div></button>
+        </div>
+        <div>
+          Dark Theme
+          <button class="controlButton" onclick="darkTheme()"><div style="transform:rotate(30deg);font-size:23px;">&#x263D;</div></button>
         </div>
       </div>
     </header>

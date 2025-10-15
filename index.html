@@ -9,7 +9,9 @@
         background-color: white;
         margin-left: 15.2%;
         margin-right: 15.2%;
-        box-shadow: 10px 10px 10px lightblue;
+        box-shadow: 10px 10px 100px ##7E7E7E;
+        border-radius: 20px;
+        border: 1px solid black;
       }
 
       header {
@@ -23,17 +25,6 @@
 
       footer {
         padding: 10px 40px;
-      }
-      
-      .controls {
-        display: grid;
-        width: 180px;
-        height: 180px;
-        border-radius: 15px;
-        grid-template-columns: 180px;
-        text-align: center;
-        margin: auto;
-        background-color: #DDDDDD;
       }
       
       .controlButton {
@@ -101,16 +92,6 @@
         <img id="Top" src="WebBanner2-darktheme.png" alt="Banner" width="100%" height="auto">
         <h1>ENG0018 Computer Laboratory 2025/26</h1>
         <h2>Student URN: 6928581</h2>
-      </div>
-      <div class="controls">
-        <div>
-          Light Theme
-          <button class="controlButton" onclick="lightTheme()"><div style="transform:rotate(-90deg);font-size:23px;color:#FCD12A;border-left:5px;">&#x2600;</div></button>
-        </div>
-        <div>
-          Dark Theme
-          <button class="controlButton" onclick="darkTheme()"><div style="transform:rotate(30deg);font-size:23px;">&#x263D;</div></button>
-        </div>
       </div>
     </header>
     <main>

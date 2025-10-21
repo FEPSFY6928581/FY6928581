@@ -23,19 +23,15 @@
       footer {
         padding: 10px 40px;
       }
-
-      button {
-        margin: 10px;
-        height: 40.5px;
-      }
       
       .topButton {
+        height: 40.5px;
         width: 40.5px;
+        border: 2px outset;
         border-radius: 40.5px;
         cursor: pointer;
         background-color: #424242;
         color: white;
-        margin: auto;
         transition: width 0.5s;
       }
 
@@ -43,7 +39,9 @@
         width: 120px;
       }
 
-      .verifyButton {
+      .verifyButton {        
+        margin: 10px 10px 10px 0;
+        height: 40.5px;
         cursor: pointer;
         border-radius: 40.5px;
         display: block; 
@@ -255,7 +253,7 @@
         <button class="verifyButton" onclick="verifyLastUpdatedTime()">
           Verify Last Modified Time
         </button>
-        <button class="topButton"><div style="transform:rotate(-90deg);font-size:23px;">&#x279C;</div></button>
+        <a class="topButton" href="#Top">&#x279C;</a>
       </div>
     </footer>
     <script>

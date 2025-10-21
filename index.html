@@ -25,16 +25,21 @@
       }
 
       button {
-        margin: 10px 0 10px 0;
+        margin: 10px;
       }
       
       .topButton {
         width: 40.5px;
-        border-radius: 50%;
+        border-radius: 40.5px;
         cursor: pointer;
         background-color: #424242;
         color: white;
         margin: auto;
+      }
+
+      .topButton:hover {
+        width: 120px;
+        color: skyblue;
       }
 
       .verifyButton {
@@ -44,6 +49,10 @@
         padding: 7px 14px;
         background-color: #424242;
         color: white;
+      }
+
+      .footerButtons {
+        display: flex;
       }
       
       table {
@@ -241,12 +250,14 @@
       <p id="totalWordCount"></p>
       <!-- Last commit time display -->
       <div id="last-updated">Loading last update time...</div>
-      <!-- Verify Button -->
-      <button class="verifyButton" onclick="verifyLastUpdatedTime()">
-        Verify Last Modified Time
-      </button>
-      <div>
-        <a href="#Top"><button class="topButton"><div style="transform:rotate(-90deg);font-size:23px;">&#x279C;</div></button></a>
+      <div class="footerButtons">
+        <!-- Verify Button -->
+        <button class="verifyButton" onclick="verifyLastUpdatedTime()">
+          Verify Last Modified Time
+        </button>
+        <div>
+          <a href="#Top"><button class="topButton"><div style="transform:rotate(-90deg);font-size:23px;">&#x279C;</div></button></a>
+        </div>
       </div>
     </footer>
     <script>

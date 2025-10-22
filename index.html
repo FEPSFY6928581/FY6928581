@@ -32,32 +32,20 @@
         cursor: pointer;
         background-color: #424242;
         color: white;
-        transition: width 0.25s;
         text-decoration: none;
         text-align: center;
         margin-left: 37%;
-      }
-
-      .topButton:hover {
-        width: 120px;
       }
 
       .topButton:active {
         border: 2px inset #424242;
       }
 
-      .text::after {
+      .text {
         display: inline-block;
         transform: rotate(-90deg);
         font-size: 23px;
         content: "\279C";
-      }
-
-      .text:hover::after {
-        transform: rotate(0deg);
-        font-size: 16px;
-        margin-top: 6px;
-        content: "Back to top";
       }
 
       .verifyButton {        
@@ -82,7 +70,6 @@
         boder-collapse: separate;
         border-spacing: 0;
         border: 1px solid #A2A9B1;
-        border-radius: 15px;
         width: 100%;
       }
 
@@ -97,7 +84,6 @@
 
       tr:nth-child(n + 2):hover {
         background-color: #9E9E9E;
-        overflow: hidden;
       }
 
       p.ex1 {

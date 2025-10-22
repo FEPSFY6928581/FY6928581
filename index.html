@@ -35,7 +35,6 @@
         transition: width 0.5s;
         text-decoration: none;
         text-align: center;
-        flex: 1;
       }
 
       .topButton:hover {
@@ -75,6 +74,11 @@
         display: flex;
         flex-direction: row;
         padding: 10px 0 0 0;
+      }
+
+      .controlButtons {
+        flex: 1;
+        justify-content: center;
       }
       
       table {
@@ -275,10 +279,10 @@
       <div id="last-updated">Loading last update time...</div>
       <div class="footerButtons">
         <!-- Verify Button -->
-        <button class="verifyButton" onclick="verifyLastUpdatedTime()">
-          Verify Last Modified Time
-        </button>
-        <a class="topButton" href="#Top"><span class="text"></span></a>
+        <button class="verifyButton" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
+        <div class="controlButtons">
+          <a class="topButton" href="#Top"><span class="text"></span></a>
+        </div>
       </div>
     </footer>
     <script>

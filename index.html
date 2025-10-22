@@ -33,7 +33,7 @@
         color: white;
         text-decoration: none;
         text-align: center;
-        margin-left: 37%;
+        margin: auto;
       }
 
       .topButton:active {
@@ -56,12 +56,6 @@
         display: block; 
         background-color: #424242;
         color: white;
-      }
-
-      .footerButtons {
-        display: flex;
-        flex-direction: row;
-        padding: 10px 0 0 0;
       }
       
       table {
@@ -267,11 +261,9 @@
       <p id="totalWordCount" style="margin: 0 0 10px 0;font-family: arial, sans-serif;"></p>
       <!-- Last commit time display -->
       <div id="last-updated" style="font-family: arial, sans-serif;">Loading last update time...</div>
-      <div class="footerButtons">
-        <!-- Verify Button -->
-        <button class="verifyButton" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
-        <a class="topButton" href="#Top"><span class="text"></span></a>
-      </div>
+      <!-- Verify Button -->
+      <button class="verifyButton" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
+      <a class="topButton" href="#Top"><span class="text"></span></a>
     </footer>
     <script>
       <!-- ////////////////////////////// Adding last update ////////////////////////////// -->

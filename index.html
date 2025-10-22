@@ -83,13 +83,19 @@
         background-color: #DDDDDD;
       }
 
-      tr:nth-child(n + 2):hover {
+      tr:nth-child(n+2):nth-child(-n+4):hover {
+        background-color: #9E9E9E; 
+      }
+
+      tr:nth-child(5) {
         background-color: #9E9E9E;
+        border-radius: 0 0 15px 15px;
       }
 
       p.ex1 {
         margin-left: 50px;
         margin-right: 50px;
+        font-size: 23px;
         line-height: 1.6;
       }
 

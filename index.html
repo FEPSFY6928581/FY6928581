@@ -45,11 +45,15 @@
         border: 2px inset #424242;
       }
 
-      .text {
+      .text::after {
         display: inline-block;
         transform: rotate(-90deg);
         font-size: 23px;
         content: "\279C";
+      }
+
+      .text:hover::after {
+        content: "Back to top";
       }
 
       .verifyButton {        

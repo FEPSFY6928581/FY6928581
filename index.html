@@ -45,10 +45,15 @@
         border: 2px inset #424242;
       }
 
+      .text {
+        position: absolute;
+      }
+
       .text::after {
         display: inline-block;
         transform: rotate(-90deg);
         font-size: 23px;
+        content: "U+0279C";
       }
 
       .text:hover::after {

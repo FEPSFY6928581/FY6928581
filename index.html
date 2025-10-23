@@ -62,6 +62,10 @@
         background-color: #424242;
         color: white;
       }
+
+      .controlButton {
+        border-radius: 50%;
+      }
       
       table {
         font-family: arial, sans-serif;
@@ -124,9 +128,10 @@
     </header>
     <section class="sidebar">
       <div style="background-color:tomato;">
-        buttons
+        <button class="controlButton" onclick="lightTheme()"><div style="transform:rotate(-90deg);font-size:23px;color:#FCD12A;">&#x2600;</div></button>
+        <button class="controlButton" onclick="darkTheme()"><div style="transform:rotate(30deg);font-size:23px;">&#9711;</div></button>
       </div>
-      <div style="background-color:skyblue;">
+      <div>
         <table>
           <tr>
             <th><h3>Table of Contents</h3></th>
@@ -151,7 +156,7 @@
         <!-- Last commit time display -->
         <div id="last-updated" style="font-family: arial, sans-serif;">Loading last update time...</div>
         <!-- Verify Button -->
-        <button class="verifyButton" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
+        <button class="verifyButton" onclick="verifyLastUpdatedTime()">Last Modified Time</button>
       </div>
     </section>
     <main>

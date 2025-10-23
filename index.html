@@ -4,7 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script type=”text/javascript” src=https://www.gstatic.com/charts/loader.js></script>
-    <style>  
+    <style>
+      html {
+        background-color: #F2F2F2;
+      }
+      
       body {
         background-color: white;
         margin-left: 15.2%;
@@ -114,9 +118,7 @@
         <h1>ENG0018 Computer Laboratory 2025/26</h1>
         <h2>Student URN: 6928581</h2>
     </header>
-    <main>
-      <h2 style="font-family:calibri;"><b>Conference Paper: Global Positioning System</b></h2>
-      <hr>
+    <section>
       <table>
         <tr>
           <th><h3>Table of Contents</h3></th>
@@ -134,6 +136,16 @@
           <td><a href="#References">References</td>
         </tr>
       </table>
+      <!-- Placeholder for total word count -->
+      <p id="totalWordCount" style="margin: 0 0 10px 0;font-family: arial, sans-serif;"></p>
+      <!-- Last commit time display -->
+      <div id="last-updated" style="font-family: arial, sans-serif;">Loading last update time...</div>
+      <!-- Verify Button -->
+      <button class="verifyButton" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
+    </section>
+    <main>
+      <h2 style="font-family:calibri;"><b>Conference Paper: Global Positioning System</b></h2>
+      <hr>
       <h3 id="Abstract">Abstract</h3>
       <p class="ex1">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -255,12 +267,6 @@
       <hr>
     </main>
     <footer>
-      <!-- Placeholder for total word count -->
-      <p id="totalWordCount" style="margin: 0 0 10px 0;font-family: arial, sans-serif;"></p>
-      <!-- Last commit time display -->
-      <div id="last-updated" style="font-family: arial, sans-serif;">Loading last update time...</div>
-      <!-- Verify Button -->
-      <button class="verifyButton" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
       <a class="topButton" href="#Top"><span class="text"></span></a>
     </footer>
     <script>

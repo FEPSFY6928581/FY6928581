@@ -67,6 +67,7 @@
         height: 40.5px;
         width: 40.5px;
         border-radius: 50%;
+        background-color: #424242;
       }
       
       table {
@@ -130,8 +131,10 @@
     </header>
     <section class="sidebar">
       <div style="background-color:tomato;border-radius: 15px;padding: 4px 0 4px 0;">
-        <button class="controlButton" onclick="lightTheme()"><div style="transform:rotate(-90deg);font-size:23px;color:#FCD12A;">&#x2600;</div></button>
-        <button class="controlButton" onclick="darkTheme()"><div style="transform:rotate(30deg);font-size:23px;">&#127769;</div></button>
+        <span>Light mode</span>
+        <button class="controlButton" onclick="lightTheme()"><span style="font-size:23px;color:white;">&#x2600;</span></button>
+        <span>Dark mode</span>
+        <button class="controlButton" onclick="darkTheme()"><span style="font-size:23px;color:white;">&#x25D7;</span></button>
       </div>
       <div>
         <table>

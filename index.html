@@ -5,10 +5,6 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script type=”text/javascript” src=https://www.gstatic.com/charts/loader.js></script>
     <style>
-      html {
-        background-color: #F2F2F2;
-      }
-      
       body {
         background-color: white;
         margin-left: 16.7%;
@@ -136,6 +132,14 @@
         <span>Dark mode</span>
         <button class="controlButton" onclick="darkTheme()"><span style="font-size:23px;color:white;">&#x25D7;</span></button>
       </div>
+      <div style="background-color:tomato;border-radius: 15px;">
+        <!-- Placeholder for total word count -->
+        <p id="totalWordCount" style="margin: 0 0 10px 0;font-family: arial, sans-serif;"></p>
+        <!-- Last commit time display -->
+        <div id="last-updated" style="font-family: arial, sans-serif;">Loading last update time...</div>
+        <!-- Verify Button -->
+        <button class="verifyButton" onclick="verifyLastUpdatedTime()">Last Modified Time</button>
+      </div>
       <div>
         <table>
           <tr>
@@ -154,14 +158,6 @@
             <td><a href="#References">References</td>
           </tr>
         </table>
-      </div>
-      <div style="background-color:yellow;border-radius: 15px;">
-        <!-- Placeholder for total word count -->
-        <p id="totalWordCount" style="margin: 0 0 10px 0;font-family: arial, sans-serif;"></p>
-        <!-- Last commit time display -->
-        <div id="last-updated" style="font-family: arial, sans-serif;">Loading last update time...</div>
-        <!-- Verify Button -->
-        <button class="verifyButton" onclick="verifyLastUpdatedTime()">Last Modified Time</button>
       </div>
     </section>
     <main>

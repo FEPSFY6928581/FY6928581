@@ -11,24 +11,24 @@
       
       body {
         background-color: white;
-        margin-left: 15.2%;
-        margin-right: 15.2%;
+        margin-left: 16.7%;
+        margin-right: 16.7%;
       }
 
-      header {
-        padding: 0 40px 0 40px;
-      }
-
-      main {
-        padding: 0 40px 0 40px;
-      }
-
-      footer {
-        padding: 10px 40px;
+      .sidebar {
+        position: fixed;
+        left: 10px;
+        background-color: grey;
+        top: 40px;
+        height: 750px;
+        width: 15.2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
       }
       
       .topButton {
-        display: block
+        display: block;
         height: 40.5px;
         width: 40.5px;
         border: 2px outset #424242;
@@ -108,6 +108,9 @@
         body {
           margin: 0;
         }
+        .sidebar {
+          display: none;
+        }
       }
     </style>
   </head>
@@ -119,30 +122,37 @@
         <h1>ENG0018 Computer Laboratory 2025/26</h1>
         <h2>Student URN: 6928581</h2>
     </header>
-    <section>
-      <table>
-        <tr>
-          <th><h3>Table of Contents</h3></th>
-        </tr>
-        <tr>
-          <td><a href="#Abstract">Abstract</td>
-        </tr>
-        <tr>
-          <td><a href="#Introduction">Introduction</td>
-        </tr>
-        <tr>
-          <td><a href="#Analysis and Discussion">Analysis and Discussion</td>
-        </tr>
-        <tr>
-          <td><a href="#References">References</td>
-        </tr>
-      </table>
-      <!-- Placeholder for total word count -->
-      <p id="totalWordCount" style="margin: 0 0 10px 0;font-family: arial, sans-serif;"></p>
-      <!-- Last commit time display -->
-      <div id="last-updated" style="font-family: arial, sans-serif;">Loading last update time...</div>
-      <!-- Verify Button -->
-      <button class="verifyButton" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
+    <section class="sidebar">
+      <div style="background-color:tomato;">
+        buttons
+      </div>
+      <div style="background-color:skyblue;">
+        <table>
+          <tr>
+            <th><h3>Table of Contents</h3></th>
+          </tr>
+          <tr>
+            <td><a href="#Abstract">Abstract</td>
+          </tr>
+          <tr>
+            <td><a href="#Introduction">Introduction</td>
+          </tr>
+          <tr>
+            <td><a href="#Analysis and Discussion">Analysis and Discussion</td>
+          </tr>
+          <tr>
+            <td><a href="#References">References</td>
+          </tr>
+        </table>
+      </div>
+      <div style="background-color:yellow;">
+        <!-- Placeholder for total word count -->
+        <p id="totalWordCount" style="margin: 0 0 10px 0;font-family: arial, sans-serif;"></p>
+        <!-- Last commit time display -->
+        <div id="last-updated" style="font-family: arial, sans-serif;">Loading last update time...</div>
+        <!-- Verify Button -->
+        <button class="verifyButton" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
+      </div>
     </section>
     <main>
       <h2 style="font-family:calibri;"><b>Conference Paper: Global Positioning System</b></h2>

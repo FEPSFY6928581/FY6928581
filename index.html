@@ -13,13 +13,13 @@
       }
 
       .controlsBar {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 400px 200px 200px;
+        border-radius:15px;
         width: 100%;
         height: 60.5px;
         margin-bottom: 20px;
-        background-color: grey;
+        background-color: #65C9FF;
       }
       
       .topButton {
@@ -64,9 +64,7 @@
       }
 
       .box {
-        border-radius:15px;
         padding: 10px;
-        
       }
       
       table {
@@ -122,17 +120,17 @@
       <hr>
     </header>
     <section class="controlsBar">
-      <div class="box" style="background-color:#FE6566;">
+      <div class="box">
         <!-- Last commit time display -->
         <div id="last-updated" style="display:inline-block;">Loading last update time...</div>
         <!-- Verify Button -->
         <button class="verifyButton" onclick="verifyLastUpdatedTime()">Last Modified Time</button>
       </div>
-      <div class="box" style="background-color:#FEEB67;">
+      <div class="box">
         <!-- Placeholder for total word count -->
         <p id="totalWordCount"></p>
       </div>
-      <div class="box" style="background-color:#65C9FF;">
+      <div class="box">
         <button class="controlButton" onclick="lightTheme()"><span>&#x2600;</span></button>
         <button class="controlButton" onclick="darkTheme()"><span>&#x25D7;</span></button>
         <a class="topButton" href="#Banner"><span class="arrowSymbol"></span></a>

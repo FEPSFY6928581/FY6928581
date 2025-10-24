@@ -85,7 +85,7 @@
   <body id="body">
     <header>
       <div style="max-width:900px;">
-        <img id="Top" src="WebBanner2.png" alt="Banner" width="100%" height="auto">
+        <img id="Banner" src="WebBanner2.png" alt="Banner" width="100%" height="auto">
       </div>
         <h1>ENG0018 Computer Laboratory 2025/26</h1>
         <h2>Student URN: 6928581</h2>
@@ -234,7 +234,7 @@
       <div style="background-color:#FE6566;">
         <button class="controlButton" onclick="lightTheme()"><span>&#x2600;</span></button>
         <button class="controlButton" onclick="darkTheme()"><span>&#x25D7;</span></button>
-        <a class="topButton" href="#Top"><span class="arrowSymbol"></span></a>
+        <a class="topButton" href="#Banner"><span class="arrowSymbol"></span></a>
       </div>
       <div style="background-color:#FEEB67;">
         <!-- Placeholder for total word count -->
@@ -305,6 +305,8 @@
       window.onload = displayTotalWordCount;
       <!-- ////////////////////////////// Light & Dark theme ////////////////////////////// -->
       function lightTheme() {
+        let img = document.getElementById("Banner");
+        img.src = "WebBanner2.png";
         let body = document.getElementById("body");
         body.style.background = "white";
         body.style.color = "black";
@@ -317,6 +319,8 @@
         }
       }
       function darkTheme() {
+        let img = document.getElementById("Banner");
+        img.src = "WebBanner2-darktheme.png";
         let body = document.getElementById("body");
         body.style.background = "#202122";
         body.style.color = "white";

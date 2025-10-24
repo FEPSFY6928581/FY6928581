@@ -7,7 +7,8 @@
     <style>
       body {
         padding: 10px 30px 10px 30px;
-        background-color: white;
+        background-color: #242424;
+        color: "black";
         margin-left: 16.7%;
         margin-right: 16.7%;
       }
@@ -16,23 +17,6 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
-      }
-
-      .topButton {
-        display: inline-block;
-        height: 40.5px;
-        width: 40.5px;
-        background-color: #E5E5E5;
-        border-radius: 50%;
-        cursor: pointer;
-        text-decoration: none;
-      }
-      
-      .arrowSymbol:after {
-        display: inline-block;
-        transform: rotate(-90deg);
-        font-size: 23px;
-        content: "\279C";
       }
       
       .controlButton {
@@ -110,7 +94,6 @@
           <button class="verifyButton" onclick="verifyLastUpdatedTime()">Last Modified Time</button>
           <button class="controlButton" onclick="lightTheme()"><span>&#x2600;</span></button>
           <button class="controlButton" onclick="darkTheme()"><span>&#x25D7;</span></button>
-          <a class="topButton" href="#Banner"><span class="arrowSymbol"></span></a>
         </div>
       </div>
     </header>
@@ -254,6 +237,7 @@
       <hr>
     </main>
     <footer>
+      <a class="topButton" href="#Banner">Back to Top</a>
     </footer>
     <script>
       <!-- ////////////////////////////// Adding last update ////////////////////////////// -->

@@ -18,6 +18,11 @@
         flex-flow: row wrap;
         justify-content: space-between;
       }
+
+      .controlBox {
+        display: grid;
+        grid-template-rows: auto;
+      }
       
       .controlButton {
         height: 40.5px;
@@ -85,15 +90,17 @@
           <h2>Student URN: 6928581</h2>
           <h2><b>Conference Paper: Global Positioning System</b></h2>
         </div>
-        <div style="font-size:20px;">
+        <div class="controlBox" style="font-size:20px;">
           <!-- Placeholder for total word count -->
           <p id="totalWordCount"></p>
           <!-- Last commit time display -->
           <div id="last-updated">Loading last update time...</div>
           <!-- Verify Button -->
-          <button class="verifyButton" onclick="verifyLastUpdatedTime()">Last Modified Time</button>
-          <button class="controlButton" onclick="lightTheme()"><span>&#x2600;</span></button>
-          <button class="controlButton" onclick="darkTheme()"><span>&#x25D7;</span></button>
+          <div>
+            <button class="verifyButton" onclick="verifyLastUpdatedTime()">Last Modified Time</button>
+            <button class="controlButton" onclick="lightTheme()"><span>&#x2600;</span></button>
+            <button class="controlButton" onclick="darkTheme()"><span>&#x25D7;</span></button>
+          </div>
         </div>
       </div>
     </header>

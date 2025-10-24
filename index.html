@@ -56,6 +56,12 @@
         padding: 3px 6px 3px 6px;
         background-color: #E5E5E5;
       }
+
+      .box {
+        border-radius:15px;
+        padding: 10px;
+        
+      }
       
       table {
         font-family: arial, sans-serif;
@@ -110,23 +116,20 @@
       <hr>
     </header>
     <section class="controlsBar">
-      <div style="background-color:#FE6566;border-radius:15px 0 0 15px;">
+      <div class="box" style="background-color:#FE6566;">
         <!-- Last commit time display -->
-        <div id="last-updated">Loading last update time...</div>
+        <div id="last-updated" style="display:inline-block;">Loading last update time...</div>
         <!-- Verify Button -->
         <button class="verifyButton" onclick="verifyLastUpdatedTime()">Last Modified Time</button>
       </div>
-      <div style="background-color:#FEEB67;">
-        <button class="controlButton" onclick="lightTheme()"><span>&#x2600;</span></button>
-        <button class="controlButton" onclick="darkTheme()"><span>&#x25D7;</span></button>
-        <a class="topButton" href="#Banner"><span class="arrowSymbol"></span></a>
-      </div>
-      <div style="background-color:#7DFF66;">
+      <div class="box" style="background-color:#FEEB67;">
         <!-- Placeholder for total word count -->
         <p id="totalWordCount"></p>
       </div>
-      <div style="background-color:#65C9FF;border-radius:15px 0 0 15px;">
-        4
+      <div class="box" style="background-color:#65C9FF;">
+        <button class="controlButton" onclick="lightTheme()"><span>&#x2600;</span></button>
+        <button class="controlButton" onclick="darkTheme()"><span>&#x25D7;</span></button>
+        <a class="topButton" href="#Banner"><span class="arrowSymbol"></span></a>
       </div>
     </section>
     <main>

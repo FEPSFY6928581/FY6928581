@@ -51,7 +51,7 @@
         font-family: arial, sans-serif;
         boder-collapse: separate;
         border-spacing: 0;
-        border: 1px solid #DDDDDD;
+        border: 1px solid #72777D;
         width: 100%;
         border-radius: 15px;
       }
@@ -77,6 +77,10 @@
 
       h3 {
         color: #6BAED8;
+      }
+
+      hr {
+        border-color: #72777D;
       }
 
       @media only screen and (max-width: 1200px) {
@@ -318,6 +322,10 @@
         for (var i = 0; i < subheading.length; i++) {
            subheading[i].style.color = "#005A9C";
         }
+        let line = document.getElementByTagName("table")
+        line.style.border = "#A2A9B1";
+        let hrline = document.getElementByTagName("hr")
+        hrline.style.border = "#A2A9B1";
       }
       function darkTheme() {
         let body = document.getElementById("body");
@@ -330,6 +338,10 @@
         for (var i = 0; i < subheading.length; i++) {
           subheading[i].style.color = "#6BAED8";
         }
+        let line = document.getElementByTagName("table")
+        line.style.border = "#72777D";
+        let hrline = document.getElementByTagName("hr")
+        hrline.style.border = "#72777D";
       }
     </script>
   </body>

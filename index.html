@@ -320,12 +320,14 @@
         tab[3].style.background = "#DDDDDD";
         let subheading = document.getElementsByTagName("h3");
         for (var i = 0; i < subheading.length; i++) {
-           subheading[i].style.color = "#005A9C";
+          subheading[i].style.color = "#005A9C";
         }
         let line = document.getElementById("table");
         line.style.borderColor = "#A2A9B1";
         let hrline = document.getElementsByTagName("hr");
-        hrline.style.borderColor = "#A2A9B1";
+        for (var i = 0; i < hrline.length; i++) {
+          hrline[i].style.borderColor = "#A2A9B1";
+        }
       }
       function darkTheme() {
         let body = document.getElementById("body");
@@ -341,7 +343,9 @@
         let line = document.getElementById("table");
         line.style.borderColor = "#72777D";
         let hrline = document.getElementsByTagName("hr");
-        hrline.style.borderColor = "#72777D";
+        for (var i = 0; i < hrline.length; i++) {
+          hrline[i].style.borderColor = "#72777D";
+        }
       }
     </script>
   </body>

@@ -117,7 +117,7 @@
     </header>
     <hr>
     <main>
-      <table>
+      <table id="table">
         <tr>
           <th><h3>Table of Contents</h3></th>
         </tr>
@@ -322,7 +322,7 @@
         for (var i = 0; i < subheading.length; i++) {
            subheading[i].style.color = "#005A9C";
         }
-        let line = document.getElementsByTagName("table");
+        let line = document.getElementById("table");
         line.style.borderColor = "#A2A9B1";
         let hrline = document.getElementsByTagName("hr");
         hrline.style.borderColor = "#A2A9B1";
@@ -338,7 +338,7 @@
         for (var i = 0; i < subheading.length; i++) {
           subheading[i].style.color = "#6BAED8";
         }
-        let line = document.getElementsByTagName("table");
+        let line = document.getElementById("table");
         line.style.borderColor = "#72777D";
         let hrline = document.getElementsByTagName("hr");
         hrline.style.borderColor = "#72777D";

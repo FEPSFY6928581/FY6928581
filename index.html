@@ -21,6 +21,7 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
+				background-color: grey;
       }
 
       .controlBox {
@@ -28,6 +29,7 @@
         grid-template-rows: auto;
         padding: 10px;
         height: 184px;
+				background-color: lightgreen;
       }
       
       .controlButton {
@@ -95,11 +97,31 @@
       <div style="max-width:900px;">
         <img id="Banner" src="WebBanner2-darktheme.png" alt="Banner" width="100%" height="auto">
       </div>
-      <div class="infoBar">
-        <div>
-          <h1>ENG0018 Computer Laboratory 2025/26</h1>
-          <h2>Student URN: 6928581</h2>
-          <h2><b>Conference Paper: Global Positioning System</b></h2>
+      <h1>ENG0018 Computer Laboratory 2025/26</h1>
+      <h2>Student URN: 6928581</h2>
+      <h2><b>Conference Paper: Global Positioning System</b></h2>
+    </header>
+    <hr>
+    <main>
+			<div class="infoBar">
+        <div style="background-color: lightbrown;">
+					<table id="table">
+        		<tr>
+          		<th><h3>Table of Contents</h3></th>
+        		</tr>
+        		<tr>
+          		<td><a href="#Abstract">Abstract</td>
+        		</tr>
+        		<tr>
+          		<td><a href="#Introduction">Introduction</td>
+        		</tr>
+        		<tr>
+          		<td><a href="#Analysis and Discussion">Analysis and Discussion</td>
+        		</tr>
+        		<tr>
+          		<td><a href="#References">References</td>
+        		</tr>
+      		</table>
         </div>
         <div class="controlBox" style="font-size:20px;">
           <!-- Placeholder for total word count -->
@@ -114,26 +136,6 @@
           </div>
         </div>
       </div>
-    </header>
-    <hr>
-    <main>
-      <table id="table">
-        <tr>
-          <th><h3>Table of Contents</h3></th>
-        </tr>
-        <tr>
-          <td><a href="#Abstract">Abstract</td>
-        </tr>
-        <tr>
-          <td><a href="#Introduction">Introduction</td>
-        </tr>
-        <tr>
-          <td><a href="#Analysis and Discussion">Analysis and Discussion</td>
-        </tr>
-        <tr>
-          <td><a href="#References">References</td>
-        </tr>
-      </table>
       <h3 id="Abstract">Abstract</h3>
       <p class="ex1">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.

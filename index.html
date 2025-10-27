@@ -28,6 +28,7 @@
         grid-template-rows: auto;
         padding: 10px;
         border-radius: 15px;
+        align-items: center;
       }
       
       .controlButton {
@@ -129,8 +130,10 @@
           <!-- Verify Button -->
           <div>
             <button class="verifyButton" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
-            <button class="controlButton" onclick="lightTheme()" style="background-color:#7DFF66;"><span>&#127774;</span></button>
-            <button class="controlButton" onclick="darkTheme()"style="background-color:#65C9FF"><span>&#127771;</span></button>
+          </div>
+          <div>
+            <button class="controlButton" onclick="lightTheme()" style="background-color:#7DFF66;"><span>Light &#127774;</span></button>
+            <button class="controlButton" onclick="darkTheme()"style="background-color:#65C9FF"><span>Dark &#127771;</span></button>
           </div>
         </div>
       </div>

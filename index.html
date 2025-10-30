@@ -34,7 +34,8 @@
         font-size: 20px;
         background-color: #FE6566;
         height: 228px;
-        flex-basis: 378px;
+        flex: 1;
+        border: 1px solid #A2A9B1;
       }
       
       .controlButton {
@@ -235,9 +236,9 @@
       }
       function darkTheme() {
         let html = document.documentElement;
-        html.style.background = "#202122";
+        html.style.background = "#242424";
         let body = document.getElementById("body");
-        body.style.background = "#242424";
+        body.style.background = "#202122";
         body.style.color = "white";
         let tab = document.getElementsByTagName("tr");
         tab[1].style.background = "#7E7E7E";

@@ -7,6 +7,7 @@
     <style>
       html {
         scroll-behavior: smooth;
+        background-color: #F8F9FA;
       }
       
       body {
@@ -213,6 +214,8 @@
       window.onload = displayTotalWordCount;
       <!-- ////////////////////////////// Light & Dark theme ////////////////////////////// -->
       function lightTheme() {
+        let html = document.documentElement;
+        html.style.background = "#F8F9FA";
         let body = document.getElementById("body");
         body.style.background = "white";
         body.style.color = "black";
@@ -231,6 +234,8 @@
         }
       }
       function darkTheme() {
+        let html = document.documentElement;
+        html.style.background = "#202122";
         let body = document.getElementById("body");
         body.style.background = "#242424";
         body.style.color = "white";

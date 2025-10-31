@@ -12,14 +12,17 @@
       body {
         background-color: #F8F9FA;
       }
-      
-      header, main, footer {
+
+      .a4 {
         padding: 10px 30px 10px 30px;
-        color: black;
         margin-left: 16.7%;
         margin-right: 16.7%;
       }
-
+      
+      header, main, footer {
+        padding: 10px 0 10px 0;
+      }
+      
       .infoBar {
         position: sticky;
         top: 0px;
@@ -98,106 +101,107 @@
     </style>
   </head>
   <body id="body">
-    <div class="infoBar">
-      <!-- Placeholder for total word count -->
-      <div id="totalWordCount"></div>
-      <!-- Last commit time display -->
-      <div id="last-updated">Loading last update time...</div>
-      <div>
-        <button class="controlButton" onclick="lightTheme()"style="background-color:#7DFF66;"><span>Light &#127774;</span></button>
-        <button class="controlButton" onclick="darkTheme()"style="background-color:#65C9FF;"><span>Dark &#127771;</span></button>
-        <!-- Verify Button -->
-        <button class="verifyButton" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
+    <div id="a4" class="a4">
+      <div class="infoBar">
+        <!-- Placeholder for total word count -->
+        <div id="totalWordCount"></div>
+        <!-- Last commit time display -->
+        <div id="last-updated">Loading last update time...</div>
+        <div>
+          <button class="controlButton" onclick="lightTheme()"style="background-color:#7DFF66;"><span>Light &#127774;</span></button>
+          <button class="controlButton" onclick="darkTheme()"style="background-color:#65C9FF;"><span>Dark &#127771;</span></button>
+          <!-- Verify Button -->
+          <button class="verifyButton" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
+        </div>
       </div>
+      <header>
+        <div style="max-width:900px;">
+          <img id="Banner" src="WebBanner2-darktheme.png" alt="Banner" width="100%" height="auto">
+        </div>
+        <h1>ENG0018 Computer Laboratory 2025/26</h1>
+        <h2>Student URN: 6928581</h2>
+        <h2><b>Atomic Clocks: How we measure time, using the micro world.</b></h2>
+      </header>
+      <main>
+        <table id="table">
+          <tr>
+            <th><h3>Table of Contents</h3></th>
+          </tr>
+          <tr>
+            <td><a href="#Abstract">Abstract</td>
+          </tr>
+          <tr>
+            <td><a href="#Introduction">Introduction</td>
+          </tr>
+          <tr>
+            <td><a href="#Analysis and Discussion">Analysis and Discussion</td>
+          </tr>
+          <tr>
+            <td><a href="#References">References</td>
+          </tr>
+        </table>
+        <hr>
+        <h3 id="Abstract" class="subHeading">Abstract</h3>
+        <p class="ex1">
+          web page design , put a bar up top position fixed maybe, have the rest of the page with margins, add a glossary, leave the behind the page background
+          find nice colors, maybe put like cool asthetic images on the background, yeah im thinking of adding an image background for my header section
+        </p>
+        <h3 id="Introduction" class="subHeading">Introduction</h3>
+        <p id="Introduction_InText" class="ex1">
+          Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an
+          intelligent machine through the interaction of an oracle with the machine system, over a sequence of
+          learning epochs. A distinctive component in an active system is the querying strategy, used to sample
+          candidate training instances from a pool and evaluate them for informativeness, i.e., their potential
+          to improve the classification model. Various strategies have been proposed including; Query by
+          Committee (Seung et al., 1992), Monte Carlo estimation (Roy and McCallum, 2001), uncertainty
+          sampling (Lewis and Gale, 1994) and version space reduction (margin sampling) (Tong and Koller,
+          2001). Irrespective of how the most informative pattern instances are chosen at each epoch they are
+          presented for labeling, to a machine (database) or human oracle that has knowledge of the class
+          labels. After adding the newly labeled instances to the current training set, a revised model is
+          subsequently induced. A goal of this process is to achieve an efficient, incremental advancement of
+          learning at each epoch. The process is continued until some stopping criterion has been met, such as
+          reaching a stage where information from the selected instances is contrary to the model, causing the
+          classifier confidence to drop, as in Vlachos (2008). 
+          Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an
+          intelligent machine through the interaction of an oracle with the machine system, over a sequence of
+          learning epochs. A distinctive component in an active system is the querying strategy, used to sample
+          candidate training instances from a pool and evaluate them for informativeness, i.e., their potential
+          to improve the classification model. Various strategies have been proposed including; Query by
+          Committee (Seung et al., 1992), Monte Carlo estimation (Roy and McCallum, 2001), uncertainty
+          sampling (Lewis and Gale, 1994) and version space reduction (margin sampling) (Tong and Koller,
+          2001). Irrespective of how the most informative pattern instances are chosen at each epoch they are
+          presented for labeling, to a machine (database) or human oracle that has knowledge of the class
+          labels. After adding the newly labeled instances to the current training set, a revised model is
+          subsequently induced. A goal of this process is to achieve an efficient, incremental advancement of
+          learning at each epoch. The process is continued until some stopping criterion has been met, such as
+          reaching a stage where information from the selected instances is contrary to the model, causing the
+          classifier confidence to drop, as in Vlachos (2008). 
+        </p>
+        <h3 id="Analysis and Discussion" class="subHeading">Analysis and discussion</h3>
+        <p id="Analysis_InText" class="ex1">
+          Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an
+          intelligent machine through the interaction of an oracle with the machine system, over a sequence of
+          learning epochs. A distinctive component in an active system is the querying strategy, used to sample
+          candidate training instances from a pool and evaluate them for informativeness, i.e., their potential
+          to improve the classification model. Various strategies have been proposed including; Query by
+          Committee (Seung et al., 1992), Monte Carlo estimation (Roy and McCallum, 2001), uncertainty
+          sampling (Lewis and Gale, 1994) and version space reduction (margin sampling) (Tong and Koller,
+          2001). Irrespective of how the most informative pattern instances are chosen at each epoch they are
+          presented for labeling, to a machine (database) or human oracle that has knowledge of the class
+          labels. After adding the newly labeled instances to the current training set, a revised model is
+          subsequently induced. A goal of this process is to achieve an efficient, incremental advancement of
+          learning at each epoch. The process is continued until some stopping criterion has been met, such as
+          reaching a stage where information from the selected instances is contrary to the model, causing the
+          classifier confidence to drop, as in Vlachos (2008). 
+        </p>
+        <h3 id="References" class="subHeading">References</h3>
+        <p class="ex1">
+        </p>
+      </main>
+      <footer>
+        <a class="topButton" href="#Banner">Back to Top</a>
+      </footer>
     </div>
-    <header id="a4">
-      <div style="max-width:900px;">
-        <img id="Banner" src="WebBanner2-darktheme.png" alt="Banner" width="100%" height="auto">
-      </div>
-      <h1>ENG0018 Computer Laboratory 2025/26</h1>
-      <h2>Student URN: 6928581</h2>
-      <h2><b>Atomic Clocks: How we measure time, using the micro world.</b></h2>
-    </header>
-    <main id="a4">
-      <table id="table">
-        <tr>
-          <th><h3>Table of Contents</h3></th>
-        </tr>
-        <tr>
-          <td><a href="#Abstract">Abstract</td>
-        </tr>
-        <tr>
-          <td><a href="#Introduction">Introduction</td>
-        </tr>
-        <tr>
-          <td><a href="#Analysis and Discussion">Analysis and Discussion</td>
-        </tr>
-        <tr>
-          <td><a href="#References">References</td>
-        </tr>
-      </table>
-      <hr>
-      <h3 id="Abstract" class="subHeading">Abstract</h3>
-      <p class="ex1">
-        web page design , put a bar up top position fixed maybe, have the rest of the page with margins, add a glossary, leave the behind the page background
-        find nice colors, maybe put like cool asthetic images on the background, yeah im thinking of adding an image background for my header section
-      </p>
-      <h3 id="Introduction" class="subHeading">Introduction</h3>
-      <p id="Introduction_InText" class="ex1">
-        Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an
-        intelligent machine through the interaction of an oracle with the machine system, over a sequence of
-        learning epochs. A distinctive component in an active system is the querying strategy, used to sample
-        candidate training instances from a pool and evaluate them for informativeness, i.e., their potential
-        to improve the classification model. Various strategies have been proposed including; Query by
-        Committee (Seung et al., 1992), Monte Carlo estimation (Roy and McCallum, 2001), uncertainty
-        sampling (Lewis and Gale, 1994) and version space reduction (margin sampling) (Tong and Koller,
-        2001). Irrespective of how the most informative pattern instances are chosen at each epoch they are
-        presented for labeling, to a machine (database) or human oracle that has knowledge of the class
-        labels. After adding the newly labeled instances to the current training set, a revised model is
-        subsequently induced. A goal of this process is to achieve an efficient, incremental advancement of
-        learning at each epoch. The process is continued until some stopping criterion has been met, such as
-        reaching a stage where information from the selected instances is contrary to the model, causing the
-        classifier confidence to drop, as in Vlachos (2008). 
-        Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an
-        intelligent machine through the interaction of an oracle with the machine system, over a sequence of
-        learning epochs. A distinctive component in an active system is the querying strategy, used to sample
-        candidate training instances from a pool and evaluate them for informativeness, i.e., their potential
-        to improve the classification model. Various strategies have been proposed including; Query by
-        Committee (Seung et al., 1992), Monte Carlo estimation (Roy and McCallum, 2001), uncertainty
-        sampling (Lewis and Gale, 1994) and version space reduction (margin sampling) (Tong and Koller,
-        2001). Irrespective of how the most informative pattern instances are chosen at each epoch they are
-        presented for labeling, to a machine (database) or human oracle that has knowledge of the class
-        labels. After adding the newly labeled instances to the current training set, a revised model is
-        subsequently induced. A goal of this process is to achieve an efficient, incremental advancement of
-        learning at each epoch. The process is continued until some stopping criterion has been met, such as
-        reaching a stage where information from the selected instances is contrary to the model, causing the
-        classifier confidence to drop, as in Vlachos (2008). 
-        
-      </p>
-      <h3 id="Analysis and Discussion" class="subHeading">Analysis and discussion</h3>
-      <p id="Analysis_InText" class="ex1">
-        Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an
-        intelligent machine through the interaction of an oracle with the machine system, over a sequence of
-        learning epochs. A distinctive component in an active system is the querying strategy, used to sample
-        candidate training instances from a pool and evaluate them for informativeness, i.e., their potential
-        to improve the classification model. Various strategies have been proposed including; Query by
-        Committee (Seung et al., 1992), Monte Carlo estimation (Roy and McCallum, 2001), uncertainty
-        sampling (Lewis and Gale, 1994) and version space reduction (margin sampling) (Tong and Koller,
-        2001). Irrespective of how the most informative pattern instances are chosen at each epoch they are
-        presented for labeling, to a machine (database) or human oracle that has knowledge of the class
-        labels. After adding the newly labeled instances to the current training set, a revised model is
-        subsequently induced. A goal of this process is to achieve an efficient, incremental advancement of
-        learning at each epoch. The process is continued until some stopping criterion has been met, such as
-        reaching a stage where information from the selected instances is contrary to the model, causing the
-        classifier confidence to drop, as in Vlachos (2008). 
-      </p>
-      <h3 id="References" class="subHeading">References</h3>
-      <p class="ex1">
-      </p>
-    </main>
-    <footer id="a4">
-      <a class="topButton" href="#Banner">Back to Top</a>
-    </footer>
     <script>
       <!-- ////////////////////////////// Adding last update ////////////////////////////// -->
       async function getLastUpdatedTime() {

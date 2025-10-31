@@ -16,13 +16,15 @@
         margin-right: 16.7%;
       }
       
-      header, main, footer {
+      main, footer {
         padding: 10px 0 10px 0;
       }
 
       header {
+        padding: 0 0 20px 0;
         background-image: url(20251029_115909.jpg);
         background-size: cover;
+        
       }
       
       .infoBar {
@@ -115,15 +117,15 @@
         <button class="verifyButton" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
       </div>
     </div>
+    <header>
+      <div style="max-width:900px;">
+        <img id="Banner" src="WebBanner2-darktheme.png" alt="Banner" width="100%" height="auto">
+      </div>
+      <h1>ENG0018 Computer Laboratory 2025/26</h1>
+      <h2>Student URN: 6928581</h2>
+      <h2><b>Atomic Clocks: How we measure time, using the micro world.</b></h2>
+    </header>
     <div id="a4" class="a4">
-      <header>
-        <div style="max-width:900px;">
-          <img id="Banner" src="WebBanner2-darktheme.png" alt="Banner" width="100%" height="auto">
-        </div>
-        <h1>ENG0018 Computer Laboratory 2025/26</h1>
-        <h2>Student URN: 6928581</h2>
-        <h2><b>Atomic Clocks: How we measure time, using the micro world.</b></h2>
-      </header>
       <main>
         <table id="table">
           <tr>
@@ -259,6 +261,8 @@
       window.onload = displayTotalWordCount;
       <!-- ////////////////////////////// Light & Dark theme ////////////////////////////// -->
       function lightTheme() {
+        let body = document.getElementById("body");
+        body.style.background = "#F8F9FA";
         let a4 = document.getElementById("a4");
         a4.style.background = "#F8F9FA";
         a4.style.color = "black";
@@ -277,6 +281,8 @@
         }
       }
       function darkTheme() {
+        let body = document.getElementById("body");
+        body.style.background = "#242424";
         let a4 = document.getElementById("a4");
         a4.style.background = "#242424";
         a4.style.color = "white";

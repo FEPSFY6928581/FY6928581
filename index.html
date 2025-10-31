@@ -14,6 +14,7 @@
       }
 
       .a4 {
+        background-color: white;
         padding: 10px 30px 10px 30px;
         margin-left: 16.7%;
         margin-right: 16.7%;
@@ -101,19 +102,19 @@
     </style>
   </head>
   <body id="body">
-    <div id="a4" class="a4">
-      <div class="infoBar">
-        <!-- Placeholder for total word count -->
-        <div id="totalWordCount"></div>
-        <!-- Last commit time display -->
-        <div id="last-updated">Loading last update time...</div>
-        <div>
-          <button class="controlButton" onclick="lightTheme()"style="background-color:#7DFF66;"><span>Light &#127774;</span></button>
-          <button class="controlButton" onclick="darkTheme()"style="background-color:#65C9FF;"><span>Dark &#127771;</span></button>
-          <!-- Verify Button -->
-          <button class="verifyButton" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
-        </div>
+    <div class="infoBar">
+      <!-- Placeholder for total word count -->
+      <div id="totalWordCount"></div>
+      <!-- Last commit time display -->
+      <div id="last-updated">Loading last update time...</div>
+      <div>
+        <button class="controlButton" onclick="lightTheme()"style="background-color:#7DFF66;"><span>Light &#127774;</span></button>
+        <button class="controlButton" onclick="darkTheme()"style="background-color:#65C9FF;"><span>Dark &#127771;</span></button>
+        <!-- Verify Button -->
+        <button class="verifyButton" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
       </div>
+    </div>
+    <div id="a4" class="a4">
       <header>
         <div style="max-width:900px;">
           <img id="Banner" src="WebBanner2-darktheme.png" alt="Banner" width="100%" height="auto">

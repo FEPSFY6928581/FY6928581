@@ -9,12 +9,8 @@
         scroll-behavior: smooth;
       }
       
-      body {
-        background-color: #F8F9FA;
-      }
-
       .a4 {
-        background-color: white;
+        background-color: #F8F9FA;
         padding: 10px 30px 10px 30px;
         margin-left: 16.7%;
         margin-right: 16.7%;
@@ -263,10 +259,8 @@
       window.onload = displayTotalWordCount;
       <!-- ////////////////////////////// Light & Dark theme ////////////////////////////// -->
       function lightTheme() {
-        let body = document.getElementById("body");
-        body.style.background = "#F8F9FA";
         let a4 = document.getElementById("a4");
-        a4.style.background = "white";
+        a4.style.background = "#F8F9FA";
         a4.style.color = "black";
         let tab = document.getElementsByTagName("tr");
         tab[1].style.background = "#DDDDDD";
@@ -283,8 +277,6 @@
         }
       }
       function darkTheme() {
-        let body = document.getElementById("body");
-        body.style.background = "#2F2F2F";
         let a4 = document.getElementById("a4");
         a4.style.background = "#242424";
         a4.style.color = "white";

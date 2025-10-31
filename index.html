@@ -7,31 +7,29 @@
     <style>
       html {
         scroll-behavior: smooth;
-        background-color: #F8F9FA;
       }
       
       body {
+        background-color: #F8F9FA;
+      }
+      
+      header, main, footer {
         padding: 10px 30px 10px 30px;
-        background-color: white;
         color: black;
         margin-left: 16.7%;
         margin-right: 16.7%;
       }
 
       .infoBar {
+        position: fixed;
+        top: 0px;
         display: flex;
-        flex-direction: column;
-        gap: 20px;
-      }
-
-      .controlBox {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        padding: 10px;
-        border-radius: 15px;
-        align-items: center;
+        flex-flow: row wrap;
+        gap: 5px 20px;
         font-size: 18px;
-        border: 1px solid #A2A9B1;
+        padding: 10px;
+        background-color: #FE6566;
+        width: 100%;
       }
       
       .controlButton {
@@ -98,6 +96,18 @@
     </style>
   </head>
   <body id="body">
+    <div class="infoBar">
+      <!-- Placeholder for total word count -->
+      <div id="totalWordCount"></div>
+      <!-- Last commit time display -->
+      <div id="last-updated">Loading last update time...</div>
+      <div>
+        <button class="controlButton" onclick="lightTheme()"style="background-color:#7DFF66;"><span>Light &#127774;</span></button>
+        <button class="controlButton" onclick="darkTheme()"style="background-color:#65C9FF;"><span>Dark &#127771;</span></button>
+        <!-- Verify Button -->
+        <button class="verifyButton" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
+      </div>
+    </div>
     <header>
       <div style="max-width:900px;">
         <img id="Banner" src="WebBanner2-darktheme.png" alt="Banner" width="100%" height="auto">
@@ -107,39 +117,23 @@
       <h2><b>Atomic Clocks: How we measure time, using the micro world.</b></h2>
     </header>
     <main>
-      <div class="infoBar">
-        <div style="min-width:200.375px;flex:1;">
-          <table id="table">
-            <tr>
-              <th><h3>Table of Contents</h3></th>
-            </tr>
-            <tr>
-              <td><a href="#Abstract">Abstract</td>
-            </tr>
-            <tr>
-              <td><a href="#Introduction">Introduction</td>
-            </tr>
-            <tr>
-              <td><a href="#Analysis and Discussion">Analysis and Discussion</td>
-            </tr>
-            <tr>
-              <td><a href="#References">References</td>
-            </tr>
-          </table>
-        </div>
-        <div class="controlBox">
-          <!-- Placeholder for total word count -->
-          <div id="totalWordCount"></div>
-          <!-- Last commit time display -->
-          <div id="last-updated">Loading last update time...</div>
-          <div>
-            <button class="controlButton" onclick="lightTheme()"style="background-color:#FE6566;"><span>Light &#127774;</span></button>
-            <button class="controlButton" onclick="darkTheme()"style="background-color:#65C9FF;"><span>Dark &#127771;</span></button>
-            <!-- Verify Button -->
-            <button class="verifyButton" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
-          </div>
-        </div>
-      </div>
+      <table id="table">
+        <tr>
+          <th><h3>Table of Contents</h3></th>
+        </tr>
+        <tr>
+          <td><a href="#Abstract">Abstract</td>
+        </tr>
+        <tr>
+          <td><a href="#Introduction">Introduction</td>
+        </tr>
+        <tr>
+          <td><a href="#Analysis and Discussion">Analysis and Discussion</td>
+        </tr>
+        <tr>
+          <td><a href="#References">References</td>
+        </tr>
+      </table>
       <hr>
       <h3 id="Abstract" class="subHeading">Abstract</h3>
       <p class="ex1">

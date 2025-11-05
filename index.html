@@ -119,14 +119,14 @@
   <body id="body">
     <div class="infoBar" id="infoBar">
       <!-- Placeholder for total word count -->
-      <div id="totalWordCount"></div>
+      <div id="totalWordCount" class="flexItem"></div>
       <!-- Last commit time display -->
-      <div id="last-updated">Loading last update time...</div>
-      <div>
-        <button id="button1" class="flexItem" onclick="lightTheme()"><span>Light</span></button>
-        <button id="button2" class="flexItem" onclick="darkTheme()"><span>Dark</span></button>
+      <div id="last-updated" class="flexItem">Loading last update time...</div>
+      <div class="flexItem">
+        <button id="button1" onclick="lightTheme()"><span>Light</span></button>
+        <button id="button2" onclick="darkTheme()"><span>Dark</span></button>
         <!-- Verify Button -->
-        <button id="button3" class="flexItem" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
+        <button id="button3" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
       </div>
     </div>
     <header>

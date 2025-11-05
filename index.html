@@ -16,7 +16,7 @@
       header {
         background-color: lightgreen;
         padding: 10px;
-        height: 1000px;
+        height: 700px;
       }
       
       main, footer {
@@ -53,15 +53,15 @@
         background-color: #DDDDDD;
       }
 
-      #button1 {
+      .button1 {
         background-color: #FE6566;
       }
 
-      #button2 {
+      .button2 {
         background-color: #65C9FF;
       }
 
-      #button3 {
+      .button3 {
         background-color: #FFED66;
       }
 
@@ -119,18 +119,18 @@
     </style>
   </head>
   <body id="body">
-    <div class="infoBar" id="infoBar">
+    <section class="infoBar">
       <!-- Placeholder for total word count -->
       <div id="totalWordCount" class="flexItem"></div>
       <!-- Last commit time display -->
       <div id="last-updated" class="flexItem">Loading last update time...</div>
       <div class="flexItem">
-        <button id="button1" onclick="lightTheme()"><span>Light</span></button>
-        <button id="button2" onclick="darkTheme()"><span>Dark</span></button>
+        <button class="button1" onclick="lightTheme()"><span>Light</span></button>
+        <button class="button2" onclick="darkTheme()"><span>Dark</span></button>
         <!-- Verify Button -->
-        <button id="button3" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
+        <button class="button3" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
       </div>
-    </div>
+    </section>
     <header id="Top">
       <div id="box" style="max-width:900px">
         <img src="WebBanner2-darktheme.png" alt="Banner" width="100%" height="auto">

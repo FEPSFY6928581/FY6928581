@@ -12,15 +12,19 @@
       body {
         background-color: #F8F9FA;
       }
+
+      header {
+        background-color: lightgreen;   
+      }
       
-      header, main, footer {
+      main, footer {
         padding: 10px;
         margin-left: 20%;
         margin-right: 20%;
       }
       
       .infoBar {
-        position: sticky;
+        position: fixed;
         top: 0px;
         display: flex;
         flex-direction: row;
@@ -106,7 +110,7 @@
       }
 
       @media only screen and (max-width: 1200px) {
-        header, main, footer {
+        main, footer {
           margin: 0;
         }
       }
@@ -125,7 +129,7 @@
         <button id="button3" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
       </div>
     </div>
-    <header>
+    <header id="Top">
       <div id="box" style="max-width:900px">
         <img src="WebBanner2-darktheme.png" alt="Banner" width="100%" height="auto">
       </div>
@@ -216,7 +220,7 @@
       </p>
     </main>
     <footer>
-      <a href="#infoBar">Back to Top</a>
+      <a href="#Top">Back to Top</a>
     </footer>
     <script>
       <!-- ////////////////////////////// Adding last update ////////////////////////////// -->

@@ -51,15 +51,15 @@
         background-color: #DDDDDD;
       }
 
-      .button1 {
+      #button1 {
         background-color: #FE6566;
       }
 
-      .button2 {
+      #button2 {
         background-color: #65C9FF;
       }
 
-      .button3 {
+      #button3 {
         background-color: #FFED66;
       }
 
@@ -105,8 +105,12 @@
         border-color: #A2A9B1;
       }
 
+      .flexItem {
+        flex: 0 0 auto;
+      }
+
       @media only screen and (max-width: 1200px) {
-        main, footer, box {
+        main, footer, #box {
           margin: 0;
         }
       }
@@ -119,14 +123,14 @@
       <!-- Last commit time display -->
       <div id="last-updated">Loading last update time...</div>
       <div>
-        <button class="button1" onclick="lightTheme()"><span>Light</span></button>
-        <button class="button2" onclick="darkTheme()"><span>Dark</span></button>
+        <button id="button1" class="flexItem" onclick="lightTheme()"><span>Light</span></button>
+        <button id="button2" class="flexItem" onclick="darkTheme()"><span>Dark</span></button>
         <!-- Verify Button -->
-        <button class="button3" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
+        <button id="button3" class="flexItem" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
       </div>
     </div>
     <header>
-      <div class="box" style="max-width:900px;margin: 0 16.7% 0 16.7%;">
+      <div id="box" style="max-width:900px;margin: 0 16.7% 0 16.7%;">
         <img src="WebBanner2-darktheme.png" alt="Banner" width="100%" height="auto">
       </div>
     </header>

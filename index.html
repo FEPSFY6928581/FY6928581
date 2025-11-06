@@ -39,11 +39,18 @@
         overflow: auto;
       }
 
-      .cover {
+      #cover {
         position: fixed;
-        background-color: white;
-        height: 100%;
-        width: 100%;
+        background-color: transparent;
+        backdrop-filter: blur(5px);
+        top: 0;
+        bottom: 0;
+        width: 100%
+        transition: top, 20s linear;
+      }
+
+      #cover {
+        top: 200px;
       }
       
       button {
@@ -141,7 +148,7 @@
         <button class="button3" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
       </div>
     </section>
-    <div class="cover"></div>
+    <div id="cover"></div>
     <header id="Top">
       <div class="Banner">
         <img src="WebBanner2-darktheme.png" alt="Banner" width="100%" height="auto">

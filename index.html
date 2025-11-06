@@ -44,13 +44,12 @@
         background-color: white;
         top: 0;
         bottom: 0;
-        left: 0;
-        right: 0;
-        transition: top 20s linear;
+        width: 100%;
+        transition: top 3s linear;
       }
 
       .reveal {
-        top: 200px;
+        top: 1000px;
       }
       
       button {
@@ -335,7 +334,7 @@
         var element = document.getElementById("cover");
         element.classList.add("reveal");
       }
-      
+    
       function stuff() {
         // Initial load to display the time on page load
         getLastUpdatedTime();

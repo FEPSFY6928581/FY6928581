@@ -11,16 +11,17 @@
 
       body {
         background-color: #F8F9FA;
+        animation-name: coolStuff;
+        animation-duration: 5s;
+        animation-timing-function: linear;
       }
 
       header {
         padding: 10px;
-        animation-name: coolStuff;
-        animation-duration: 3s;
       }
 
       @keyframes coolStuff {
-        from{height: auto;}
+        from{height: 0;}
         to {height: 500px;}
       }
       

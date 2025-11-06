@@ -11,12 +11,6 @@
 
       body {
         background-color: #F8F9FA;
-        height: 0%;
-        transition: height 5s linear;
-      }
-
-      html:hover {
-        height: 100%;
       }
 
       header {
@@ -43,6 +37,12 @@
         align-items: center;
         backdrop-filter: blur(5px);
         overflow: auto;
+      }
+
+      .cover {
+        position: fixed;
+        height: 100%
+        width: 100%
       }
       
       button {
@@ -140,6 +140,7 @@
         <button class="button3" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
       </div>
     </section>
+    <div class="cover"></div>
     <header id="Top">
       <div class="Banner">
         <img src="WebBanner2-darktheme.png" alt="Banner" width="100%" height="auto">

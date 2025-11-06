@@ -46,11 +46,7 @@
         top: 0;
         bottom: 0;
         width: 100%
-        transition: top, 20s linear;
-      }
-
-      #cover {
-        top: 200px;
+        transition: top 20s linear;
       }
       
       button {
@@ -277,8 +273,6 @@
         await getLastUpdatedTime();
         alert("Last modified time has been successfully verified from GitHub API.");
       }
-      // Initial load to display the time on page load
-      window.onload = getLastUpdatedTime;
       <!-- ////////////////////////////// Word count function ///////////////////////////// -->
       // Function to calculate and display word count for a specified section
       function displayWordCount(sectionId, outputId) {
@@ -293,8 +287,6 @@
         const totalWordCount = IntroductionCount + AnalysisCount;
         document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
       }
-      // Run the function for specific sections and display total count when the page loads
-      window.onload = displayTotalWordCount;
       <!-- ////////////////////////////// Light & Dark theme ////////////////////////////// -->
       function lightTheme() {
         let body = document.getElementById("body");
@@ -334,6 +326,13 @@
           hrline[i].style.borderColor = "#72777D";
         }
       }
+      <!-- ////////////////////////////// Trigger ////////////////////////////// -->
+      // Initial load to display the time on page load
+      window.onload = getLastUpdatedTime;
+      // Run the function for specific sections and display total count when the page loads
+      window.onload = displayTotalWordCount;
+      // Reveal page
+      window.onload = ;
     </script>
   </body>
 </html>

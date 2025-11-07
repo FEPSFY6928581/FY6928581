@@ -10,7 +10,7 @@
       }
 
       body {
-        background-color: #F8F9FA;
+        background-color: #e1e8f4;
       }
 
       header {
@@ -39,16 +39,22 @@
         overflow: auto;
       }
 
-      #cover {
+      #splashPage {
         position: fixed;
-        background-color: #5C7EA1;
+        background-color: #89e1fe;
         top: 0;
         bottom: 0;
         width: 100%;
         transition: bottom 1.5s ease-in-out;
+        transition-delay: 2s;
       }
 
-      #cover.reveal { 
+      .splashPage-text {
+        position: absolute;
+        margin: auto;
+      }
+
+      #splashPage.reveal { 
         bottom: 100vh;
       }
       
@@ -147,7 +153,9 @@
         <button class="button3" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
       </div>
     </section>
-    <div id="cover"></div>
+    <div id="splashPage">
+      <div class="splashPage-text"><h2><b>Welcome to my Webpage!</b></h2></div>
+    </div>
     <header id="Top">
       <div class="Banner">
         <img src="WebBanner2-darktheme.png" alt="Banner" width="100%" height="auto">
@@ -331,7 +339,7 @@
       }
       <!-- ////////////////////////////// Trigger ////////////////////////////// -->
       function revealPage() {
-        var element = document.getElementById("cover");
+        var element = document.getElementById("splashPage");
         element.classList.add("reveal");
       }
     

@@ -113,17 +113,17 @@
         border-right: 3px solid #7DFF66;
         animation: 
           typing 4.5s steps(44, end) 1s 1 normal both,
-          blinkTextCursor 0.5s step-end infinite;
+          blinkTextCursor 0.5s steps(44) infinite normal;
       }
 
       @keyframes typing {
-        from {width: 0}
-        to {width: 78%}
+        from { width: 0; }
+        to { width: 78%; }
       }
 
       @keyframes blinkTextCursor{
-        from { border-color: transparent }
-        to { border-color: #7DFF66; }
+        from { border-color: #7DFF66; }
+        to { border-color: transparent; }
       }
       
       hr {

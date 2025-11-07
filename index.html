@@ -109,16 +109,14 @@
       .typewritter h2 {
         overflow: hidden;
         border-right: 6px solid #7DFF66;
-        white-space: nowrap;
-        margin: 0 auto;
         animation: 
-          typing 4.5s steps(44) 1s 1 normal both,
-          blinkTextCursor 500ms steps(44) infinite normal;
+          typing 4.5s steps(44, end) 1s,
+          blinkTextCursor .75s step-end infinite;
       }
 
       @keyframes typing {
-        from {width: 0;}
-        to {width: 80%;}
+        from {width: 0}
+        to {width: 100%}
       }
 
       @keyframes blinkTextCursor{

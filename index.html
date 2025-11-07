@@ -44,8 +44,16 @@
         top: 0;
         bottom: 0;
         width: 100%;
-        background-color: white;
+        background-color: black;
         transition: bottom 1.5s ease-in-out;
+        transition-delay: 1.5s;
+      }
+
+      .splashPage-text {
+        position: absolute;
+        color: white;
+        width: 900px;
+        margin: auto;
       }
 
       #splashPage.reveal {
@@ -147,7 +155,7 @@
         <button class="button3" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
       </div>
     </section>
-    <div id="splashPage"><div class="splashPage-text"></div></div>
+    <div id="splashPage"><h2 class="splashPage-text">Welcome to my Webpage!</h2></div>
     <header id="Top">
       <div class="Banner">
         <img src="WebBanner2-darktheme.png" alt="Banner" width="100%" height="auto">
@@ -324,7 +332,7 @@
         // getLastUpdatedTime();
         // Run the function for specific sections and display total count when the page loads
         displayTotalWordCount();
-        // Reveal Webpage
+        // Reveals Webpage
         revealPage();
       }
       window.onload = pageLoad;

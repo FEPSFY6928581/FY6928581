@@ -13,8 +13,17 @@
         background-color: white;
       }
 
-      header {
-        padding: 10px;
+      #header {
+        padding: 50.5px 10px 10px 10px;
+        height: 100vh;
+        width: 100%;
+        background-color: lightblue;
+        transition: height 1.5s ease-in-out;
+        transition-delay: 1s;
+      }
+
+      #header.transition {
+        height: auto;
       }
       
       main, footer {
@@ -37,28 +46,6 @@
         align-items: center;
         backdrop-filter: blur(5px);
         overflow: auto;
-      }
-
-      #splashPage {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: black;
-        transition: bottom 1.5s ease-in-out;
-        transition-delay: 1s;
-      }
-
-      .splashPage-text {
-        position: absolute;
-        color: white;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-
-      #splashPage.reveal {
-        bottom: 100vh;
       }
 
       button {
@@ -123,7 +110,7 @@
         text-align: center;
       }
 
-      .Banner {
+      #banner {
         max-width:900px;
         margin:0 20% 0 20%;
       }
@@ -156,9 +143,8 @@
         <button class="button3" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
       </div>
     </section>
-    <div id="splashPage"><h2 class="splashPage-text">Welcome to my Webpage!</h2></div>
-    <header id="Top">
-      <div class="Banner">
+    <header id="header">
+      <div id="banner">
         <img src="WebBanner2-darktheme.png" alt="Banner" width="100%" height="auto">
       </div>
     </header>
@@ -233,7 +219,7 @@
       </p>
     </main>
     <footer>
-      <a href="#Top">Back to Top</a>
+      <a href="#header">Back to Top</a>
     </footer>
     <script>
       <!-- ////////////////////////////// Adding last update ////////////////////////////// -->
@@ -325,8 +311,8 @@
       }
       <!-- ////////////////////////////// Trigger ////////////////////////////// -->
       function revealPage() {
-        var element = document.getElementById("splashPage");
-        element.classList.add("reveal");
+        var element = document.getElementById("header");
+        element.classList.add("transition");
       }
       function pageLoad() {
         // Initial load to display the time on page load - this causes an error because 'GET' is rate limited.

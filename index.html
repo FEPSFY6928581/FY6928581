@@ -45,9 +45,12 @@
         bottom: 0;
         width: 100%;
         background-color: white;
+        transition: bottom 1.5s ease-in-out;
       }
 
-      #splashPage.
+      #splashPage.reveal {
+        bottom: 100vh;
+      }
 
       button {
         height: 40.5px;
@@ -312,8 +315,9 @@
         }
       }
       <!-- ////////////////////////////// Trigger ////////////////////////////// -->
-      function reveal() {
-        var = 
+      function revealPage() {
+        var element = document.getElementById("splashPage");
+        element.classList.add("reveal");
       }
       function pageLoad() {
         // Initial load to display the time on page load - this causes an error because 'GET' is rate limited.
@@ -321,7 +325,7 @@
         // Run the function for specific sections and display total count when the page loads
         displayTotalWordCount();
         // Reveal Webpage
-        reveal();
+        revealPage();
       }
       window.onload = pageLoad;
     </script>

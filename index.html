@@ -45,7 +45,7 @@
         top: 0;
         bottom: 0;
         width: 100%;
-        transition: top 5s ease-in-out;
+        transition: bottom 5s ease-in-out;
       }
 
       #cover.reveal { 
@@ -335,7 +335,7 @@
         element.classList.add("reveal");
       }
     
-      function stuff() {
+      function pageLoad() {
         // Initial load to display the time on page load
         getLastUpdatedTime();
         // Run the function for specific sections and display total count when the page loads
@@ -343,7 +343,7 @@
         // Reveals page
         revealPage();
       }
-      window.onload = stuff;
+      window.onload = pageLoad;
     </script>
   </body>
 </html>

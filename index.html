@@ -13,19 +13,8 @@
         background-color: white;
       }
 
-      #header {
-        padding: 10px;
-        display: flex;
-        align-items: center;
-        height: 100vh;
-        width: 100%;
-        transition: height 1.5s ease-in-out, padding-top 1.5s ease-in-out;
-        transition-delay: 1s;
-      }
-
-      #header.transition {
-        height: 326px;
-        padding-top: 50.5px;
+      header {
+        padding: 50.5px 10px 10px 10px;
       }
       
       main, footer {
@@ -112,9 +101,26 @@
         text-align: center;
       }
 
+      #splashPage {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: lightblue;
+      }
+
+      #splashPage.transition {
+      }
+
       #banner {
-        max-width:900px;
-        margin: 0 20% 0 20%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      
+      #banner.transition {
       }
       
       hr {
@@ -145,14 +151,12 @@
         <button class="button3" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
       </div>
     </section>
+    <div id="splashPage"><img id="banner" src="WebBanner2-darktheme.png" alt="Banner" width="900px" height="auto"></div>
     <header id="header">
-      <div id="banner">
-        <img src="WebBanner2-darktheme.png" alt="Banner" width="100%" height="auto">
-      </div>
-    </header>
-    <main>
       <h1>ENG0018 Computer Laboratory 2025/26</h1>
       <h2>Student URN: 6928581</h2>
+    </header>
+    <main>
       <h2><b>Atomic Clocks: How we measure time, using the micro world.</b></h2>
       <table id="table">
         <tr>
@@ -285,7 +289,7 @@
       }
       <!-- ////////////////////////////// Trigger ////////////////////////////// -->
       function revealPage() {
-        var element = document.getElementById("header");
+        var element = document.getElementById("splashPage");
         element.classList.add("transition");
       }
       function pageLoad() {
@@ -294,7 +298,7 @@
         // Run the function for specific sections and display total count when the page loads
         displayTotalWordCount();
         // Reveals Webpage
-        revealPage();
+        //revealPage();
       }
       window.onload = pageLoad;
     </script>

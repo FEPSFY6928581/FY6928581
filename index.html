@@ -117,10 +117,12 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        max-width: 900px;
+        animation-name: fadeIn;
       }
 
-      
-      #banner.transition {
+      #banner.fadeIn {
+        opacity: 1;
       }
       
       hr {
@@ -151,7 +153,9 @@
         <button class="button3" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
       </div>
     </section>
-    <div id="splashPage"><img id="banner" src="WebBanner2.png" alt="Banner" width="900px" height="auto"></div>
+    <div id="splashPage">
+      <img id="banner" src="WebBanner2.png" alt="Banner" width="100%" height="auto">
+    </div>
     <header id="header">
       <h1>ENG0018 Computer Laboratory 2025/26</h1>
       <h2>Student URN: 6928581</h2>

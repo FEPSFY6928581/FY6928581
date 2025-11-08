@@ -107,9 +107,11 @@
         bottom: 0;
         width: 100%;
         background-color: white;
+        transition: bottom 1.5s ease-in-out;
       }
 
       #splashPage.transition {
+        bottom: 100vh;
       }
 
       #banner {
@@ -293,21 +295,19 @@
         }
       }
       <!-- ////////////////////////////// Trigger ////////////////////////////// -->
-      function revealPage() {
+      setTimeout(function revealPage() {
         var element = document.getElementById("splashPage");
         element.classList.add("transition");
-      }
+      }, 2500);
       setTimeout(function changeImage() {
         let image = document.getElementById("banner");
         image.src = "WebBanner2-darktheme.png";
       }, 2000);
       function pageLoad() {
-        // Initial load to display the time on page load - this causes an error because 'GET' is rate limited.
+        // Initial load to display the time on page load.
         // getLastUpdatedTime();
         // Run the function for specific sections and display total count when the page loads
         displayTotalWordCount();
-        // Reveals Webpage
-        //revealPage();
       }
       window.onload = pageLoad;
     </script>

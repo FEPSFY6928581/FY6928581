@@ -181,10 +181,10 @@
       8 MIN READ
       <h3 id="Abstract" class="subHeading">Abstract</h3>
       <p class="ex1">
-        I am the one yeeee
       </p>
       <h3 id="Introduction" class="subHeading">Introduction</h3>
       <p id="Introduction_InText" class="ex1">
+        being chilling my guy.
       </p>
       <h3 id="Analysis and Discussion" class="subHeading">Analysis and discussion</h3>
       <p id="Analysis_InText" class="ex1">
@@ -275,9 +275,9 @@
         body.style.background = "#2F2F2F";
         body.style.color = "white";
         let tab = document.getElementsByTagName("tr");
-        tab[1].style.background = "#7E7E7E";
-        tab[3].style.background = "#7E7E7E";
-        tab[5].style.background = "#7E7E7E";
+        tab[1].style.background = "#4F4F4F";
+        tab[3].style.background = "#4F4F4F";
+        tab[5].style.background = "#4F4F4F";
         let bar = document.getElementById("infoBar")
         bar.style.background = "transparent";
         let subheading = document.getElementsByTagName("h3");
@@ -300,13 +300,13 @@
         let image = document.getElementById("banner");
         image.src = "WebBanner2-darktheme.png";
       }, 1750);
-      window.onload = displayTotalWordCount;
       function pageLoad() {
         // Initial load to display the time on page load.
         // getLastUpdatedTime();
         // Run the function for specific sections and display total count when the page loads
-        
+        displayTotalWordCount();
       }
+      window.onload = pageLoad;
     </script>
   </body>
 </html>

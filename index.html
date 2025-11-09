@@ -300,13 +300,13 @@
         let image = document.getElementById("banner");
         image.src = "WebBanner2-darktheme.png";
       }, 1750);
+      window.onload = displayTotalWordCount;
       function pageLoad() {
         // Initial load to display the time on page load.
         // getLastUpdatedTime();
         // Run the function for specific sections and display total count when the page loads
-        displayTotalWordCount();
+        
       }
-      window.onload = pageLoad;
     </script>
   </body>
 </html>

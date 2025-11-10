@@ -125,18 +125,16 @@
         border-right: .15em solid black;
         white-space: nowrap;
         margin: 0 auto;
-        width: 465px;
         letter-spacing: .15em; 
         animation: 
-          typing 1.5s steps(40, end),
+          typing 1.5s steps(40, end) 1.5s,
           blink-caret .75s step-end infinite;
-        animation-delay: 1.5s;
       }
 
    
       @keyframes typing {
         from { width: 0 }
-        to { width: 100% }
+        to { width: 465px; }
       }
 
       @keyframes blink-caret {

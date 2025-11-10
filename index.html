@@ -124,11 +124,13 @@
         overflow: hidden; 
         border-right: .15em solid black;
         white-space: nowrap;
-        margin: 0 auto; 
+        margin: 0 auto;
+        width: 465px;
         letter-spacing: .15em; 
         animation: 
-          typing 3.5s steps(40, end),
+          typing 1.5s steps(40, end),
           blink-caret .75s step-end infinite;
+        animation-delay: 1.5s;
       }
 
    
@@ -139,7 +141,7 @@
 
       @keyframes blink-caret {
         from, to { border-color: transparent }
-        50% { border-color: orange; }
+        50% { border-color: black; }
       }
       
       hr {
@@ -345,11 +347,11 @@
       setTimeout(function revealPage() {
         var element = document.getElementById("splashPage");
         element.classList.add("transition");
-      }, 2500);
+      }, 3000);
       setTimeout(function changeImage() {
         let image = document.getElementById("banner");
         image.src = "WebBanner2-darktheme.png";
-      }, 1750);
+      }, 1500);
       function pageLoad() {
         // Initial load to display the time on page load.
         // getLastUpdatedTime();

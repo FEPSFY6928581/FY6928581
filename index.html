@@ -96,50 +96,6 @@
         text-align: center;
       }
 
-      #splashPage {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100vh;
-        background: linear-gradient(to right, #ECE9E6, white 20% 80%, #ECE9E6);
-        transition: top 1.2s ease-in-out;
-      }
-
-      #splashPage.transition {
-        top: -100vh;
-      }
-
-      #splashPage-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-
-      .typewriter h2 {
-        overflow: hidden;
-        width: 465px;
-        border-right: .12em solid black;
-        white-space: nowrap;
-        margin: 0 auto;
-        color: black;
-        letter-spacing: .15em;
-        animation: 
-          typing 2.5s steps(40) 1s 1 normal both,
-          blink-caret .5s step-end infinite;
-      }
-   
-      @keyframes typing {
-        from { width: 0; }
-        to { width: 100%; }
-      }
-
-      @keyframes blink-caret {
-        from, to { border-color: transparent; }
-        50% { border-color: black; }
-      }
-      
       hr {
         border-color: #A2A9B1;
       }
@@ -168,13 +124,6 @@
         <button class="button3" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
       </div>
     </section>
-    <div id="splashPage">
-      <div id="splashPage-content">
-        <div class="typewriter">
-          <h2><b>Welcome To My Webpage!</b></h2>
-        </div>
-      </div>
-    </div>
     <header id="header">
       <img id="banner" src="WebBanner2-darktheme.png" alt="Banner" width="100%" height="auto">
     </header>
@@ -321,10 +270,6 @@
         }
       }
       <!-- ////////////////////////////// Trigger ////////////////////////////// -->
-      setTimeout(function revealPage() {
-        var element = document.getElementById("splashPage");
-        element.classList.add("transition");
-      }, 3500);
       function pageLoad() {
         // Initial load to display the time on page load.
         // getLastUpdatedTime();

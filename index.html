@@ -103,34 +103,6 @@
         text-align: left;
       }
 
-      #splashPage {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100vh;
-        background: linear-gradient(to bottom left, #667db6, #53a4d2, #53a4d2, #0082c8);
-        transition: top 1.2s ease-in-out;
-      }
-
-      #splashPage.transition {
-        top: -100vh;
-      }
-
-      #splashPage-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        max-width: 900px;
-        opacity: 0;
-        animation: fadeIn 3s ease-in forwards;
-      }
-
-      @keyframes fadeIn {
-        to { opacity: 1;}
-      }
-
       hr {
         border-color: #A2A9B1;
       }
@@ -146,10 +118,6 @@
       @media only screen and (max-width: 1200px) {
         main, footer {
           margin: 0;
-        }
-        #splashPage-content {
-          left: 0;
-          transform: translate(0, -50%);
         }
       }
     </style>
@@ -167,12 +135,8 @@
         <button class="button3" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
       </div>
     </section>
-    <div id="splashPage">
-      <div id="splashPage-content">
-        <img id="banner" src="WebBanner2.png" alt="Banner" width="100%" height="auto">
-      </div>
-    </div>
     <header id="header">
+      <img id="banner" src="WebBanner2.png" alt="Banner" width="100%" height="auto">
     </header>
     <main>
       <h1>ENG0018 Computer Laboratory 2025/26</h1>
@@ -334,10 +298,6 @@
         }
       }
       <!-- ////////////////////////////// Trigger ////////////////////////////// -->
-      setTimeout(function splashPage() {
-        var element = document.getElementById("splashPage");
-        element.classList.add("transition");
-      }, 4500);
       function pageLoad() {
         // Initial load to display the time on page load.
         // getLastUpdatedTime();

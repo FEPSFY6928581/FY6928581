@@ -96,6 +96,35 @@
         text-align: center;
       }
 
+      #splashPage {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #55A6D4;
+        transition: top 1.2s ease-in-out;
+      }
+
+      #splashPage.transition {
+        top: -100vh;
+      }
+
+      #splashPage-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 900px;
+        color: white;
+        opacity: 0;
+        animation: fadeIn 3s ease-in forwards;
+      }
+
+      @keyframes fadeIn {
+        to { opacity: 1;}
+      }
+
       hr {
         border-color: #A2A9B1;
       }
@@ -128,6 +157,11 @@
         <button class="button3" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
       </div>
     </section>
+    <div id="splashPage">
+      <div id="splashPage-content">
+        <h2><b>Welcome To My Webpage!</b></h2>
+      </div>
+    </div>
     <header id="header">
       <img id="banner" src="WebBanner2.png" alt="Banner" width="100%" height="auto">
     </header>
@@ -230,6 +264,8 @@
       }
       <!-- ////////////////////////////// Light & Dark theme ////////////////////////////// -->
       function lightTheme() {
+        let image = document.getElementById("banner")
+        image.src = "WebBanner2.png";
         let body = document.getElementById("body");
         body.style.background = "linear-gradient(to right, #ECE9E6, white 20% 80%, #ECE9E6)";
         body.style.color = "black";
@@ -251,6 +287,8 @@
         }
       }
       function darkTheme() {
+        let image = document.getElementById("banner")
+        image.src = "WebBanner2-darktheme.png";
         let body = document.getElementById("body");
         body.style.background = "linear-gradient(to right, #242424, #2F2F2F 20% 80%, #242424)";
         body.style.color = "white";
@@ -272,6 +310,10 @@
         }
       }
       <!-- ////////////////////////////// Trigger ////////////////////////////// -->
+      setTimeout(function splashPage() {
+        var element = document.getElementById("splashPage");
+        element.classList.add("transition");
+      }, 4500);
       function pageLoad() {
         // Initial load to display the time on page load.
         // getLastUpdatedTime();

@@ -119,15 +119,12 @@
 
       pre {
         white-space: pre-wrap;
-        font-size: 18px;
+        font-size: 17px;
       }
 
       @media only screen and (max-width: 1200px) {
         main, footer, .headerContents {
           margin: 0;
-        }
-        body {
-          background: 
         }
       }
     </style>
@@ -263,6 +260,8 @@ Suplee, C. (2009). <i>A Walk Through Time - A Revolution in Timekeeping.</i> NIS
       function lightTheme() {
         let image = document.getElementById("banner")
         image.src = "WebBanner2.png";
+        var w = window.innerWidth;
+        var x = document.getElementById("demo");
         let body = document.getElementById("body");
         body.style.background = "linear-gradient(to right, #ECE9E6, white 20% 80%, #ECE9E6)";
         body.style.color = "black";

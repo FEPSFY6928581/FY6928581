@@ -65,7 +65,7 @@
         background-color: #FFED66;
       }
 
-      table {
+      #table1 {
         font-family: arial, sans-serif;
         border-collapse: seperate;
         border-spacing: 0px;
@@ -122,7 +122,7 @@
         font-size: 17px;
       }
 
-      #a2 {
+      a2 {
         color: #0250BB;
       }
 
@@ -155,7 +155,7 @@
     </header>
     <main>
       <h2><b>Atomic Clocks: Exploring the science and technology behind them.</b></h2>
-      <table id="table">
+      <table id="table1">
         <tr>
           <th><h3>Table of Contents</h3></th>
         </tr>
@@ -208,10 +208,10 @@ Major, F.G. (2007) <i>The Quantum Beat: Principles and Applications of Atomic Cl
 2nd edn. New York, NY : Springer New York : Imprint: Springer.
         
 Ridderbos, K (2002), <i>Time</i>. Cambridge University Press, Cambridge. 
-Available at: <a id="a2" href="https://ebookcentral.proquest.com/lib/surrey/detail.action?docID=217746">https://ebookcentral.proquest.<wbr>com/lib/surrey/detail.action?docID=217746</a> (Accessed: 30 November 2025).
+Available at: <a class="a2" href="https://ebookcentral.proquest.com/lib/surrey/detail.action?docID=217746">https://ebookcentral.proquest.<wbr>com/lib/surrey/detail.action?docID=217746</a> (Accessed: 30 November 2025).
           
 Suplee, C. (2009). <i>A Walk Through Time - A Revolution in Timekeeping.</i> NIST. 
-Available at: <a id="a2" href="https://www.nist.gov/pml/time-and-frequency-division/popular-links/walk-through-time/walk-through-time-revolution">https://www.nist.gov/pml/time-and-frequency-division/popular-links/walk-through-time/walk-through-time-revolution</a> (Accessed: 30 November 2025).
+Available at: <a class="a2" href="https://www.nist.gov/pml/time-and-frequency-division/popular-links/walk-through-time/walk-through-time-revolution">https://www.nist.gov/pml/time-and-frequency-division/popular-links/walk-through-time/walk-through-time-revolution</a> (Accessed: 30 November 2025).
         </pre>
       </p>
       <h3 id="Glossary" class="subHeading">Glossary</h3>
@@ -286,7 +286,7 @@ Available at: <a id="a2" href="https://www.nist.gov/pml/time-and-frequency-divis
         tab[5].style.background = "#DDDDDD";
         let bar = document.getElementById("infoBar")
         bar.style.background = "#1786C5BB";
-        let link = document.getElementById("a2");
+        let link = document.getElementByClassName("a2");
         link.style.color = "#0250BB";
         let line = document.getElementById("table");
         line.style.borderColor = "#A2A9B1";
@@ -307,7 +307,7 @@ Available at: <a id="a2" href="https://www.nist.gov/pml/time-and-frequency-divis
         tab[5].style.background = "#4F4F4F";
         let bar = document.getElementById("infoBar")
         bar.style.background = "transparent";
-        let link = document.getElementById("a2");
+        let link = document.getElementByClassName("a2");
         link.style.color = "#6BAED8";
         let line = document.getElementById("table");
         line.style.borderColor = "#72777D";

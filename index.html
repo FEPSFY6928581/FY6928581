@@ -95,7 +95,7 @@
       }
 
       h3 {
-        color: #005A9C;
+        <!-- color: #005A9C; -->
         scroll-margin-top: 60.5px;
       }
 
@@ -211,7 +211,7 @@ Ridderbos, K (2002), <i>Time</i>. Cambridge University Press, Cambridge.
 Available at: <a id="a2" href="https://ebookcentral.proquest.com/lib/surrey/detail.action?docID=217746">https://ebookcentral.proquest.<wbr>com/lib/surrey/detail.action?docID=217746</a> (Accessed: 30 November 2025).
           
 Suplee, C. (2009). <i>A Walk Through Time - A Revolution in Timekeeping.</i> NIST. 
-Available at: <a id="a2" hreg="https://www.nist.gov/pml/time-and-frequency-division/popular-links/walk-through-time/walk-through-time-revolution">https://www.nist.gov/pml/time-and-frequency-division/popular-links/walk-through-time/walk-through-time-revolution</a> (Accessed: 30 November 2025).
+Available at: <a id="a2" href="https://www.nist.gov/pml/time-and-frequency-division/popular-links/walk-through-time/walk-through-time-revolution">https://www.nist.gov/pml/time-and-frequency-division/popular-links/walk-through-time/walk-through-time-revolution</a> (Accessed: 30 November 2025).
         </pre>
       </p>
       <h3 id="Glossary" class="subHeading">Glossary</h3>
@@ -286,10 +286,8 @@ Available at: <a id="a2" hreg="https://www.nist.gov/pml/time-and-frequency-divis
         tab[5].style.background = "#DDDDDD";
         let bar = document.getElementById("infoBar")
         bar.style.background = "#1786C5BB";
-        let subheading = document.getElementsByTagName("h3");
-        for (var i = 0; i < subheading.length; i++) {
-          subheading[i].style.color = "#005A9C";
-        }
+        let link = document.getElementById("a2");
+        link.style.color = "#0250BB";
         let line = document.getElementById("table");
         line.style.borderColor = "#A2A9B1";
         let hrline = document.getElementsByTagName("hr");
@@ -309,10 +307,8 @@ Available at: <a id="a2" hreg="https://www.nist.gov/pml/time-and-frequency-divis
         tab[5].style.background = "#4F4F4F";
         let bar = document.getElementById("infoBar")
         bar.style.background = "transparent";
-        let subheading = document.getElementsByTagName("h3");
-        for (var i = 0; i < subheading.length; i++) {
-          subheading[i].style.color = "#6BAED8";
-        }
+        let link = document.getElementById("a2");
+        link.style.color = "#6BAED8";
         let line = document.getElementById("table");
         line.style.borderColor = "#72777D";
         let hrline = document.getElementsByTagName("hr");

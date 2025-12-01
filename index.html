@@ -276,8 +276,6 @@ Available at: <a class="a2" href="https://www.nist.gov/pml/time-and-frequency-di
       function lightTheme() {
         let image = document.getElementById("banner")
         image.src = "WebBanner2.png";
-        var w = window.innerWidth;
-        var x = document.getElementById("demo");
         let body = document.getElementById("body");
         body.style.background = "white";
         body.style.color = "black";
@@ -287,8 +285,10 @@ Available at: <a class="a2" href="https://www.nist.gov/pml/time-and-frequency-di
         tab[5].style.background = "#DDDDDD";
         let bar = document.getElementById("infoBar")
         bar.style.background = "#1786C5BB";
-        let link = document.getElementByClassName("a2");
-        link.style.color = "#0250BB";
+        let link = document.getElementsByClassName("a2");
+        for (var i = 0; i < hrline.length; i++) {
+          link.style.color = "#0250BB";
+        }
         let line = document.getElementById("table");
         line.style.borderColor = "#A2A9B1";
         let hrline = document.getElementsByTagName("hr");
@@ -308,8 +308,10 @@ Available at: <a class="a2" href="https://www.nist.gov/pml/time-and-frequency-di
         tab[5].style.background = "#4F4F4F";
         let bar = document.getElementById("infoBar")
         bar.style.background = "transparent";
-        let link = document.getElementByClassName("a2");
-        link.style.color = "#6BAED8";
+        let link = document.getElementsByClassName("a2");
+        for (var i = 0; i < hrline.length; i++) {
+          link.style.color = "#6BAED8";
+        }
         let line = document.getElementById("table");
         line.style.borderColor = "#72777D";
         let hrline = document.getElementsByTagName("hr");

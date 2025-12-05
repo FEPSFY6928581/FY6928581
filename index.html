@@ -195,21 +195,20 @@
         the design of these clocks, and their applications in modern day.
       </p>
       <h3 id="Analysis and Discussion" class="Heading">Analysis and discussion</h3>
-      <h4 class="subHeading">History of the Atomic Clock</h4>
-        <p id="Analysis_InText1" class="ex1">
-        </p>
-      <h4 class="subHeading">In Depth Explanation</h4>
-        <p id="Analysis_InText2" class="ex1">
-        </p>
-      <h4 class="subHeading">Analysis</h4>
+      <p id="Analysis_InText" class="ex1">
+        Atomic resonance, unlike other clock regulating systems is not affected by temperature, geographical locations etc. because atoms of a given element are completely identical. 
+        There are many different versions of an atomic clock but they all work based the same shared principle, that is the transitioning of atoms between different energy states (ESA). 
+        When energy in the form or electro-magnetic radiation (usually microwaves) is incident on an atom, its energy store increases and is said to be “excited”. Then, it returns to a lower energy state again. 
+        It is in this transition that the atom releases energy of precise frequency which is unique to the atom used. The frequency of light is therefore called its resonance frequency. 
+        By counting the number of crest and trough of the resonant light and converting these into ticks of time we have a clock. This is how in 1967 the second came to be defined as “9,192,631,770 cycles of 
+        radiation associated with the transition between the two hyperfine levels of the ground state of the cesium-133 atom” (Britannica, 2019). 
+      </p>
         <table>
           <tr>
             <th><h4>Type of Atomic clock</h4></th>
             <th><h4>Accuracy</h4></th>
           </tr>
         </table>
-        <p id="Analysis_InText3" class="ex1">
-        </p>
       <h3 id="References" class="Heading">References</h3>
       <p class="ex1">
         <pre>
@@ -224,6 +223,10 @@ Available at: <a class="a2" href="https://www.nist.gov/pml/time-and-frequency-di
 
 Encyclopædia Britannica. (2019). <i>Second | unit of time.</i>
 Available at: <a class ="a2" href="https://www.britannica.com/science/second">https://www.britannica.com/science/second</a>
+        
+www.esa.int. (n.d.). Galileo - Principles of the atomic clock. [online] Available at: https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Galileo_-_Principles_of_the_atomic_clock.        
+
+          
         </pre>
       </p>
       <h3 id="Glossary" class="Heading">Glossary</h3>
@@ -279,7 +282,7 @@ Available at: <a class ="a2" href="https://www.britannica.com/science/second">ht
       }
       function displayTotalWordCount() {
         const IntroductionCount = displayWordCount("Introduction_InText");
-        const AnalysisCount = displayWordCount("Analysis_InText1");
+        const AnalysisCount = displayWordCount("Analysis_InText");
         const totalWordCount = IntroductionCount + AnalysisCount;
         document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
       }

@@ -154,7 +154,7 @@
       </div>
     </header>
     <main>
-      <h2 style="text-align: center;"><b>Have Atomic clocks shrunk the planet?</b></h2>
+      <h2><b>Have Atomic clocks shrunk the planet?</b></h2>
       <table id="table1">
         <tr>
           <th><h3>Table of Contents</h3></th>
@@ -188,8 +188,13 @@
         Among the earliest non-astronomical devices for measuring time was the water clock dating back to 2000 B.C. (Major, 2007). By the 14th century large mechanical clocks making use of weight then springs were developed, 
         although they lacked good regulating systems. By the 17th century pendulum clocks credited to Christiaan Huygens with later refinements reduced clock’s error to less than 10 seconds a day (Suplee, 2009). 
         By the 1920s a new system of regulators known as a quartz crystal oscillator improved the accuracy of and miniaturisation of clocks…This brings us to the present day were by far the most advanced way of telling the time are atomic clocks, 
-        they provide the most stable regulators there could possibly be in the universe because atoms of a given element are completely identical their resonance, unlike other clock regulating systems is not affected by temperature, motion, 
-        geographical locations etc. “<i>Globalization</i> is the idea that the world is developing a single economy as a result of improved technology and communications” (Anon, 2019). Atomic clocks have “shrunk the planet” because they enable synchronous
+        they provide the most stable regulators there could possibly be in the universe because atoms of a given element are completely identical their resonance, 
+        unlike other clock regulating systems is not affected by temperature, motion, geographical locations etc.
+      </p>
+      <p id="Introduction_InText2" class="ex1">
+        But what do I mean by “shrunk the planet”? It’s a metaphorical phrase to say how much smaller and interconnected the world feels because of in my case atomic clocks. Therefore, terms like <i>Globalization</i> 
+        “the idea that the world is developing a single economy as a result of improved technology and communications” (Globalization | Dictionary, 2019) and <i>Ubiquity</i> “the fact that something or someone seems to be everywhere” 
+        (UBIQUITY | Dictionary, n.d.) are a suitable measure of “shrinking”. I believe atomic clocks specifically have shrunk the planet because of their impact on two distinct areas, Navigation and the Internet, the synchronous of time…
       </p>
       <h3 id="Analysis and Discussion" class="Heading">Analysis and discussion</h3>
         <h4 class ="subHeading">Shrinking the Physical world</h4>
@@ -283,11 +288,12 @@ Available at: <a class="a2" href="https://www.nasa.gov/missions/tech-demonstrati
       }
       function displayTotalWordCount() {
         const IntroductionCount = displayWordCount("Introduction_InText");
+        const IntroductionCount2 = displayWordCount("Introduction_InText2");
         const AnalysisCount = displayWordCount("Analysis_InText");
         const AnalysisCount2 = displayWordCount("Analysis_InText2");
         const AnalysisCount3 = displayWordCount("Analysis_InText3");
         const ConclusionCount = displayWordCount("Conclusion_InText");
-        const totalWordCount = IntroductionCount + AnalysisCount + AnalysisCount2 + AnalysisCount3 + ConclusionCount;
+        const totalWordCount = IntroductionCount + IntroductionCount2 + AnalysisCount + AnalysisCount2 + AnalysisCount3 + ConclusionCount;
         document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
       }
       // Light & Dark theme 

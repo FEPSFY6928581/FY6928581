@@ -96,7 +96,6 @@
      
       .Heading {
         font-weight: bold;
-        text-align: center;
         scroll-margin-top: 60.5px;
       }
         
@@ -155,7 +154,7 @@
       </div>
     </header>
     <main>
-      <h2><b>Have Atomic clocks shrunk the planet?</b></h2>
+      <h2 style="text-align: center;"><b>Have Atomic clocks shrunk the planet?</b></h2>
       <table id="table1">
         <tr>
           <th><h3>Table of Contents</h3></th>
@@ -190,17 +189,18 @@
         although they lacked good regulating systems. By the 17th century pendulum clocks credited to Christiaan Huygens with later refinements reduced clock’s error to less than 10 seconds a day (Suplee, 2009). 
         By the 1920s a new system of regulators known as a quartz crystal oscillator improved the accuracy of and miniaturisation of clocks…This brings us to the present day were by far the most advanced way of telling the time are atomic clocks, 
         they provide the most stable regulators there could possibly be in the universe because atoms of a given element are completely identical their resonance, unlike other clock regulating systems is not affected by temperature, motion, 
-        geographical locations etc. “<i>Globalization</i> is the idea that the world is developing a single economy as a result of improved technology and communications” (Anon,2019). Atomic clocks have “shrunk the planet” because they enable synchronous
+        geographical locations etc. “<i>Globalization</i> is the idea that the world is developing a single economy as a result of improved technology and communications” (Anon, 2019). Atomic clocks have “shrunk the planet” because they enable synchronous
       </p>
       <h3 id="Analysis and Discussion" class="Heading">Analysis and discussion</h3>
-      <h4>Shrinking the Physical world</h4>
-      <h4>Shrinking the Digital world</h4>
-      <p id="Analysis_InText" class="ex1">
-        Navigation – GPS,
-        Internet - Hight frequency trading,
-        Counter argument- globalisation is bad the idea that the wealth gap and such increasing did’t “shrink the planet” haha haha see what I did there? 
-        Future
-      </p>
+        <h4 class ="subHeading">Shrinking the Physical world</h4>
+        <p id="Analysis_InText" class="ex1">
+        </p>
+        <h4 class ="subHeading">Shrinking the Digital world</h4>
+        <p id="Analysis_InText2" class="ex1">
+        </p>
+        <h4 class ="subHeading">Counter-arguement and Future</h4>
+        <p id="Analysis_InText3" class="ex1">
+        </p>
       <h3 id="Conclusion" class="Heading">Conclusion</h3>
       <p id="Conclusion_InText" class="ex1">
         Purpose of the paper 
@@ -284,8 +284,10 @@ Available at: <a class="a2" href="https://www.nasa.gov/missions/tech-demonstrati
       function displayTotalWordCount() {
         const IntroductionCount = displayWordCount("Introduction_InText");
         const AnalysisCount = displayWordCount("Analysis_InText");
+        const AnalysisCount2 = displayWordCount("Analysis_InText2");
+        const AnalysisCount3 = displayWordCount("Analysis_InText3");
         const ConclusionCount = displayWordCount("Conclusion_InText");
-        const totalWordCount = IntroductionCount + AnalysisCount + ConclusionCount;
+        const totalWordCount = IntroductionCount + AnalysisCount + AnalysisCount2 + AnalysisCount3 + ConclusionCount;
         document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
       }
       // Light & Dark theme 

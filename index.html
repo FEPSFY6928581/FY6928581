@@ -219,7 +219,9 @@
         storing, and delivery of information such as this webpage or a YouTube video is crucially dependant on the precision of atomic clocks, it enables seamless, lag free, efficient international distributions of load. 
         Without data centres acting as the physical backbone of global interconnectedness, multinational companies like bank and cell phone providers would not be able to bridge the gap between billions of users worldwide.
       </p>
-      <div id="chart_div" style="max-width:700px; height:400px"></div>
+      <div style="max-width:700px; height:400px">
+        <img src="Figure 6 - DHL Global Connectedness Index Depth Trends (1).png" alt="Line Graph">
+      </div>
       <p id="Analysis_InText3" class="ex1">
         The graph above is DHL Global Connectedness Index it show how Interconnected DHL reports the world to be. "A level of 0% would indicate that no flows cross national borders at all. In contrast, a level of 100% would mean that borders and distance 
         have ceased to matter, and flows are as likely to happen between countries as within them"<a href="#DHL">(DHL Group, 2026)</a>. Although the Index increases when view from a technology information front the overall picture taking into account poeple, 
@@ -284,29 +286,6 @@ Available at: <a id="DHL" class="a2" href="https://www.dhl.com/global-en/microsi
       </div>
     </footer>
     <script>
-      // Chart
-      google.charts.load(‘current’, { ‘packages’ : [‘corechart’] });
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-      // Set Data
-      const data = google.visualization.arrayToDataTable([
-        ['Price', 'Size'],
-        [50,7],[60,8],[70,8],[80,9],[90,9],[100,9],
-        [110,10],[120,11],[130,14],[140,14],[150,15]
-        ]);
-      // Set Options
-      const options = {
-        title: 'House Prices vs Size',
-        hAxis: {title: 'Square Meters'},
-        vAxis: {title: 'Price in Millions'},
-        legend: 'none'
-      };
-      // Draw Chart
-      const chart = new google.visualization.LineChart(document.getElementById('chart_div'));
-      chart.draw(data, options);
-      }
-      
       // Adding last update
       async function getLastUpdatedTime() {
         const username = 'FEPSFY6928581';

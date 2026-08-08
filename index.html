@@ -289,7 +289,7 @@ Available at: <a  id="KWW" class="a2" href="https://www.nist.gov/atomic-clocks/a
         [50,7],[60,8],[70,8],[80,9],[90,9],[100,9],
         [110,10],[120,11],[130,14],[140,14],[150,15]
         ]);
-        // Set Options
+      // Set Options
       const options = {
         title: 'House Prices vs Size',
         hAxis: {title: 'Square Meters'},
@@ -297,7 +297,7 @@ Available at: <a  id="KWW" class="a2" href="https://www.nist.gov/atomic-clocks/a
         legend: 'none'
       };
       // Draw Chart
-      const chart = new google.visualization.LineChart(document.getElementById('myChart'));
+      const chart = new google.visualization.LineChart(document.getElementById('chart_div'));
       chart.draw(data, options);
       }
       
